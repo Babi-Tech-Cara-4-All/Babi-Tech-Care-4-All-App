@@ -1,7 +1,8 @@
+import styles from './HomePage.module.scss'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className={styles.homePageContainer}>HomePage</div>
   )
 }
 
