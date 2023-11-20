@@ -205,12 +205,12 @@
 
         img {
           width: 100%;
-          max-width: 100px; /* Ajuste conforme necessário */
+          max-width: 100px; 
           height: auto;
         }
         p {
-          max-width: 350px; /* Limita a largura do texto a 350 pixels */
-          margin: 10px auto; /* Adiciona margem vertical para espaçamento entre o texto e a borda do item */
+          max-width: 350px; 
+          margin: 10px auto;
         }
       }
     }
@@ -243,17 +243,11 @@
       }
     }
   }
-
-  .kids {
+  .flipCardContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-    font-family: "Comfortaa";
-    font-size: 20px;
-    img {
-      margin-bottom: 20px;
-    }
+    justify-content: center;
+    
   }
 }

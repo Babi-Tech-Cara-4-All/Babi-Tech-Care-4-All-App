@@ -11,7 +11,7 @@ import icon3 from "../../assets/imgMortalidadeInfantil/icon3.png";
 import icon4 from "../../assets/imgMortalidadeInfantil/icon4.png";
 import icon5 from "../../assets/imgMortalidadeInfantil/icon5.png";
 import icon6 from "../../assets/imgMortalidadeInfantil/icon6.png";
-import kids from "../../assets/imgMortalidadeInfantil/kids.png";
+import FlipCardKids from "../../Components/FlipCardKids/FlipCardKids";
 
 const MortalidadeInfatil = () => {
   return (
@@ -76,7 +76,8 @@ const MortalidadeInfatil = () => {
           <div className={styles.gridItem}>
             <a
               href="https://www.scielo.br/j/csp/a/CGMbDPr4FL5qYQCpPKSVQpC/?lang=pt"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={icon1} alt="Ícone 1" />
             </a>
@@ -85,7 +86,8 @@ const MortalidadeInfatil = () => {
           <div className={styles.gridItem}>
             <a
               href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno#:~:text=O%20aleitamento%20materno%20%C3%A9%20uma,ch%C3%A1s%2C%20%C3%A1gua%20e%20outros%20alimentos."
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={icon2} alt="Ícone 2" />
             </a>
@@ -94,7 +96,8 @@ const MortalidadeInfatil = () => {
           <div className={styles.gridItem}>
             <a
               href="https://www.gov.br/saude/pt-br/vacinacao/calendario"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={icon3} alt="Ícone 3" />
             </a>
@@ -103,7 +106,8 @@ const MortalidadeInfatil = () => {
           <div className={styles.gridItem}>
             <a
               href="https://institutoneurosaber.com.br/como-acompanhar-o-desenvolvimento-infantil/"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={icon4} alt="Ícone 4" />
             </a>
@@ -112,7 +116,8 @@ const MortalidadeInfatil = () => {
           <div className={styles.gridItem}>
             <a
               href="https://www.gov.br/saude/pt-br/composicao/saps"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={icon5} alt="Ícone 5" />
             </a>
@@ -121,7 +126,8 @@ const MortalidadeInfatil = () => {
           <div className={styles.gridItem}>
             <a
               href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13100-asi-aumento-da-escolaridade-feminina-reduz-fecundidade-e-mortalidade-infantil"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={icon6} alt="Ícone 6" />
             </a>
@@ -146,11 +152,11 @@ const MortalidadeInfatil = () => {
           <img src={dado3} alt="dado3"></img>
         </div>
       </div>
-
-      <div className={styles.kids}>
-        <img src={kids} alt="kids"></img>
-        <p>Clique para virar a foto!</p>
+      <div className={styles.flipCardContainer}>
+        <FlipCardKids/>
       </div>
+
+
     </div>
   );
 };
