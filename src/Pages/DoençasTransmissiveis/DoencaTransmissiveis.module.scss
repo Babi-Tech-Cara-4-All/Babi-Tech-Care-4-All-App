@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+.DoencaTransmissiveisContainer{
+    width: 100%;
+}
+
+// ----- BANNER -----
+.Banner{
+    max-width: 100%;
+}
+
+.Banner img{
+    width: 100%;
+    display: block;
+}
+
+.tituloBanner{
+    font-family: 'Comfortaa';
+    color: white;
+    display: flex;
+    position: absolute;
+    background-color: rgba(4, 75, 129, 0.34);
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+// ----- BOX ODS -----
+.odsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 100%;
+    justify-content: center; 
+}
+
+.odsImages{
+    display: flex;
+    position: relative;
+    margin-right: 200px;
+}
+
+
+.mascara{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.odsText{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa';
+    position: relative;
+}
+
+.odsText h1{
+    display: flex;
+    width: 319px;
+    height: 86px;
+    border-radius: 30px;
+    background-color: #E9720F;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 90%;
+}
+
+.odsText h3{
+    display: flex;
+    width: 605px;
+    height: 120px;
+    border-radius: 30px;
+    background-color: #647CB4;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 5px 30px 5px 30px;
+}
+
+// ----- BOX DOENÇAS TRANSMISSIVEIS E MORTALIDADES -----
+.boxMortalidades {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.txtMortalidades{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2%;
+}
+.Mortalidades{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.tituloMortalidades, .tituloMortalidadesOrange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 217px;
+    height: 57px;
+    border-radius: 30px 30px 0px 0px;
+    background: #044B81;
+}
+
+.tituloMortalidadesOrange{
+    background: #E9720F;
+}
+
+.tituloMortalidades h3,.tituloMortalidadesOrange h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.bodyMortalidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 216px;
+    height: 182px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 30px 30px;
+    background: #E4EAFA;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bodyMortalidades p{
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pnum{
+    color: #044B81;
+}
+
+.pfont{
+    color: #E9720F;
+}
+
+// ----- BOX ICONS -------
+.boxCausas{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.txtCausas{
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+.Causas{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+.blockIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockIcons div h3{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10%;
+}
+
+// BOX MULHER
+
+.Mulher{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.boxDesigualdade{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 660px;
+    flex-shrink: 0;
+    background-color: #F2CC75;
+    margin-top: 5%;
+}
+
+.balaoMulher{
+    display: flex;
+    margin-top: 30px;
+}
+.circulo{
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    background-color: #E9720F;
+    border-radius: 100px;
+    margin-top: 40px;
+    
+    }
+.balao{
+    width: 546px;
+    height: 137px;
+    flex-shrink: 0;
+    border-radius: 320px;
+    background: #E9720F;
+    position: relative;
+    margin-left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.txtBalao{
+    width: 461px;
+    height: 88px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Mulherimg{
+    width: 250px;
+    height: 163px;
+    position: relative;
+    bottom: 549px;
+    left: 105px;
+}
+  
+
+.txtMulher{
+    display: flex;
+   
+    width: 634px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: justify;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txtMulher ul{
+    list-style-type: disc;
+    margin-left: 10%; 
+   
+    font-size: 18px;
+    display: block;
+    flex-direction: column;
+   
+}
+
+.btnMulher{
+    width: 319px;
+    height: 86px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #E9720F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnMulher h2{
+    color: #FFF;
+
+text-align: center;
+font-family: Comfortaa;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    align-items: center;
+ }
+.dados figcaption{
+    width: 325.328px;
+    height: 12.452px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
