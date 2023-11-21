@@ -2,18 +2,39 @@
   width: 100%;
 
   .bannerHomePage{
-    height: 100vh;
+    height: 90vh;
     background-image: url("../../assets/imgHomePage/bannerHome.png");
     background-repeat: no-repeat;
     background-size:cover;
     color: #FFF;
     font-family: Comfortaa;
     font-weight: 500;
-    h2{
-      font-size: 3rem;
+    display: grid; 
+    grid-template-columns: 1fr 8fr 3fr; 
+    grid-template-rows: 3fr 7fr 2fr; 
+    grid-template-areas: 
+      ". . ."
+      ". info ."
+      ". . ."; 
+    .infoContainer{
+      grid-area: info;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      h2{
+        font-size: 3.4rem;
+        line-height: 4rem;
+      }
+      p{
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+      .buttonsContainer{
+        display: flex;
+        gap: 5rem;
+      }
     }
-    p{
-      font-size: 1.4rem;
-    }
+
   }
 }
+
