@@ -1,6 +1,7 @@
 import styles from "./Header.module.scss";
 import babiMed from "../../assets/BabiMed.png";
 import { useNavigate } from "react-router-dom";
+import Botao from "../Botao/Botao";
 
 const Header = () => {
 
@@ -22,7 +23,9 @@ const Header = () => {
           <li>Metas</li>
           <li onClick={() => navigateTo("/Melhoria-Geral-Da-Saude")}>Melhoria</li>
         </ul>
-        <button href="">Fale Conosco</button>
+        <Botao>
+          Fale conosco
+        </Botao>
       </div>
     </header>
   );
