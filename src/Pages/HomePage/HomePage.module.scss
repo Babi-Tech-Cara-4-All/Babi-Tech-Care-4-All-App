@@ -38,7 +38,7 @@
     background: rgb(4, 75, 129);
     background: linear-gradient(
       180deg,
-      rgba(4, 75, 129, 1) 0%,
+      rgba(4, 75, 129, 0.822) 0%,
       rgba(165, 202, 229, 1) 35%,
       rgba(255, 255, 255, 1) 100%
     );
@@ -51,7 +51,8 @@
       grid-area: main;
       display: flex;
       flex-direction: column;
-      gap: 7rem;
+      gap: 6rem;
+      font-family: Comfortaa;
       .caracteristicas {
         display: flex;
         flex-direction: row;
@@ -61,25 +62,26 @@
         gap: 6rem;
         margin-top: -6rem;
       }
+      .textBlue {
+        color: #044b81;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      .sectionTitle {
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
       .videoPitchSection {
         display: flex;
         flex-direction: row;
-        gap: 7rem;
+        gap: 3rem;
         .text {
           font-family: Comfortaa;
           display: flex;
           flex-direction: column;
           gap: 2rem;
-          .videoPich {
-            color: #044b81;
-            font-size: 1.5rem;
-            font-weight: 900;
-          }
-          h2 {
-            color: #000;
-            font-size: 2.5rem;
-            font-weight: 700;
-          }
+
           .space {
             display: flex;
             flex-direction: row;
@@ -97,22 +99,44 @@
             font-size: 1.5rem;
             font-weight: 700;
             padding-left: 2rem;
-            border-left: 3px solid  #6b6b6b;
+            border-left: 3px solid #6b6b6b;
           }
         }
-        .imagensBabi{
-          box-sizing:content-box;
-          img{
-            width: 45vh;
+        .imagensBabi {
+          box-sizing: content-box;
+          margin-top: 3.4rem;
+          img {
+            width: 55vh;
             height: auto;
           }
-          .babi2{
-            margin-left: 16rem;
+          .babi2 {
+            margin-left: 11rem;
           }
-          .babi1{
-            position:relative;
+          .babi1 {
+            position: relative;
             top: -24%;
           }
+        }
+      }
+      .metasSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.7rem;
+        .sectionSubTitle{
+          color: #2f2f2f;
+          text-align: center;
+          font-family: Comfortaa;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+        .metas{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content:space-between;
+          flex: auto;
         }
       }
     }

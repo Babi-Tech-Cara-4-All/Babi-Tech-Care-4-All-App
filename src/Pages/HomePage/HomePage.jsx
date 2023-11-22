@@ -1,6 +1,7 @@
+import styles from "./HomePage.module.scss";
 import Botao from "../../Components/Botao/Botao";
 import HomeCaracteristicas from "../../Components/HomeCaracteristicas/HomeCaracteristicas";
-import styles from "./HomePage.module.scss";
+import Metas from "../../Components/Metas/Metas";
 import prevencao from "../../assets/imgHomePage/prevencao.png";
 import automacao from "../../assets/imgHomePage/automacao.png";
 import precisao from "../../assets/imgHomePage/precisao.png";
@@ -8,6 +9,10 @@ import star from "../../assets/imgHomePage/Star.png";
 import arrow from "../../assets/imgHomePage/Arrow.png";
 import babi1 from "../../assets/imgHomePage/babi1.png";
 import babi2 from "../../assets/imgHomePage/babi2.png";
+import motalidadeIntanil from "../../assets/imgHomePage/mortalidadeInfantil.png";
+import CombateDoenca from "../../assets/imgHomePage/CombateDoenca.png";
+import prevencaoDoenca from "../../assets/imgHomePage/prevencaoDoenca.png";
+import melhoriaSaude from "../../assets/imgHomePage/melhoriaSaude.png";
 
 const HomePage = () => {
   return (
@@ -31,15 +36,17 @@ const HomePage = () => {
       </div>
       <div className={styles.gridArea}>
         <div className={styles.bodyPage}>
-          <div className={styles.caracteristicas}>
+          <section className={styles.caracteristicas}>
             <HomeCaracteristicas img={prevencao}>Prevenção</HomeCaracteristicas>
             <HomeCaracteristicas img={automacao}>Automação</HomeCaracteristicas>
             <HomeCaracteristicas img={precisao}>Precisão</HomeCaracteristicas>
-          </div>
-          <div className={styles.videoPitchSection}>
+          </section>
+          <section className={styles.videoPitchSection}>
             <div className={styles.text}>
-              <p className={styles.videoPich}>VÍDEO PITCH</p>
-              <h2>BabiMed: Sempre ao seu lado e salvando vidas.</h2>
+              <p className={styles.textBlue}>VÍDEO PITCH</p>
+              <h2 className={styles.sectionTitle}>
+                BabiMed: Sempre ao seu lado e salvando vidas.
+              </h2>
               <div className={styles.space}>
                 <img src={star} alt="star" />
                 <img src={arrow} alt="arrow" />
@@ -54,15 +61,80 @@ const HomePage = () => {
                 paciente. Junte-se a nós nesta jornada rumo a uma revoluçã o na
                 maneira como cuidamos de nós mesmos e daqueles que amamos.
               </p>
-              <div>
-                <Botao cor="azul">Saiba Mais</Botao>
-              </div>
+              <Botao cor="azul">Saiba Mais</Botao>
             </div>
             <div className={styles.imagensBabi}>
               <img className={styles.babi2} src={babi2} alt="" />
               <img className={styles.babi1} src={babi1} alt="" />
             </div>
-          </div>
+          </section>
+          <section className={styles.metasSection}>
+            <p className={styles.textBlue}>METAS</p>
+            <h2 className={styles.sectionTitle}>
+              Metas a serem alcançadas até 2030
+            </h2>
+            <p className={styles.sectionSubTitle}>
+              Objetivo 3. Assegurar uma vida saudável e promover o <br />{" "}
+              bem-estar para todas e todos, em todas as idades
+            </p>
+            <div className={styles.metas}>
+              <Metas
+                imagem={motalidadeIntanil}
+                titulo="Redução da Mortalidade
+                Infantil"
+                meta="Meta 3.2:"
+                texto="Eliminar as mortes
+                evitáveis de recém-
+                nascidos e crianças
+                menores de 5 anos,
+                com metas específicas
+                de mortalidade
+                neonatal e infantil."
+                rota=""
+                direction="column"
+              />
+              <Metas
+                imagem={CombateDoenca}
+                titulo="Combate a doenças transmissíveis"
+                meta="Meta 3.3:"
+                texto="Combate contra malária, AIDS, tuberculose,
+                hepatite, doenças
+                transmitidas pela água e
+                outras doenças
+                transmissíveis."
+                rota=""
+                direction="column"
+              />
+              <Metas
+                imagem={prevencaoDoenca}
+                titulo="Prevenção e tratamento de doenças não transmissíveis"
+                meta="Meta 3.3:"
+                texto="Reduzir
+                em um terço a
+                mortalidade
+                prematura por
+                doenças não
+                transmissíveis."
+                rota=""
+                direction="column"
+              />
+              <Metas
+                imagem={melhoriaSaude}
+                titulo="Melhoria Geral da Saúde"
+                texto="Engloba diversas metas,
+                como prevenção do abuso de
+                substâncias, redução de
+                acidentes de trânsito, acesso
+                universal a serviços de saúde
+                sexual e reprodutiva,
+                redução de mortes por
+                produtos químicos perigosos
+                e poluição."
+                rota=""
+                direction="row"
+              />
+            </div>
+          </section>
         </div>
       </div>
     </div>

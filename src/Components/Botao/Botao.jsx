@@ -1,6 +1,4 @@
 import styles from './Botao.module.scss'
-import PropTypes from 'prop-types';
-
 
 const Botao = ({children, cor}) => {
 
