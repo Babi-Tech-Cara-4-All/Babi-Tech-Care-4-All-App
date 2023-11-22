@@ -17,7 +17,7 @@ const Header = () => {
         <img className={styles.logo} src={babiMed} alt="Logo" />
         <h1 className={styles.title}>BABIMED</h1>
       </div>
-      <div className={styles.optionsContainer}>
+      <nav className={styles.optionsContainer}>
         <ul>
           <li onClick={() => navigateTo("/")} >Home</li>
           <li>Metas</li>
@@ -26,7 +26,7 @@ const Header = () => {
         <Botao>
           Fale conosco
         </Botao>
-      </div>
+      </nav>
     </header>
   );
 };
