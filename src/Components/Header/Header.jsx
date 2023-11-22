@@ -1,13 +1,19 @@
 import styles from "./Header.module.scss";
 import babiMed from "../../assets/BabiMed.png";
 import { useNavigate } from "react-router-dom";
+import Botao from "../Botao/Botao";
+import { useState } from "react";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const navigate = useNavigate()
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   function navigateTo(route) {
-    navigate(`${route}`)
+    navigate(`${route}`);
   }
 
   return (
@@ -16,14 +22,51 @@ const Header = () => {
         <img className={styles.logo} src={babiMed} alt="Logo" />
         <h1 className={styles.title}>BABIMED</h1>
       </div>
-      <div className={styles.optionsContainer}>
+      <nav className={styles.optionsContainer}>
         <ul>
-          <li onClick={() => navigateTo("/")} >Home</li>
-          <li>Metas</li>
-          <li onClick={() => navigateTo("/Melhoria-Geral-Da-Saude")}>Melhoria</li>
+          <li onClick={() => navigateTo("/")}>Home</li>
+          <li>
+            <div className={styles.dropdown}>
+              <button onClick={handleDropdownToggle}>
+                Metas
+                <i className={`arrow ${dropdownOpen ? "up" : "down"}`}></i>
+              </button>
+              {dropdownOpen && (
+                <ul className={styles.dropdownMenu}>
+                  <li
+                    onClick={() => {
+                      navigateTo("/Mortalidade-Infatil");
+                      handleDropdownToggle();
+                    }}
+                  >
+                    Redução da Mortalidade infantil
+                  </li>
+                  <li
+                    onClick={() => {
+                      navigateTo("/Tratamento-Doencas-Nao-Transmissiveis");
+                      handleDropdownToggle()
+                    }}
+                  >
+                    Combate a doenças transmissíveis
+                  </li>
+                  <li
+                    onClick={() => {
+                      navigateTo("/Doenca-Transmissiveis");
+                      handleDropdownToggle()
+                    }}
+                  >
+                    Prevenção e tratamento de doenças não transmissíveis
+                  </li>
+                </ul>
+              )}
+            </div>
+          </li>
+          <li onClick={() => navigateTo("/Melhoria-Geral-Da-Saude")}>
+            Melhoria
+          </li>
         </ul>
-        <button href="">Fale Conosco</button>
-      </div>
+        <Botao>Fale conosco</Botao>
+      </nav>
     </header>
   );
 };
