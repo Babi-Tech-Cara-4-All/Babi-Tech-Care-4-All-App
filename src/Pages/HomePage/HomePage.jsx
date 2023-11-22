@@ -90,7 +90,7 @@ const HomePage = () => {
                 com metas específicas
                 de mortalidade
                 neonatal e infantil."
-                rota=""
+                rota="/Mortalidade-Infatil"
                 direction="column"
               />
               <Metas
@@ -102,7 +102,7 @@ const HomePage = () => {
                 transmitidas pela água e
                 outras doenças
                 transmissíveis."
-                rota=""
+                rota="/Doenca-Transmissiveis"
                 direction="column"
               />
               <Metas
@@ -115,7 +115,7 @@ const HomePage = () => {
                 prematura por
                 doenças não
                 transmissíveis."
-                rota=""
+                rota="/Tratamento-Doencas-Nao-Transmissiveis"
                 direction="column"
               />
               <Metas
@@ -130,7 +130,7 @@ const HomePage = () => {
                 redução de mortes por
                 produtos químicos perigosos
                 e poluição."
-                rota=""
+                rota="/Melhoria-Geral-Da-Saude"
                 direction="row"
               />
             </div>

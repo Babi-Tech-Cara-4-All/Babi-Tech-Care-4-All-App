@@ -12,7 +12,7 @@ const Metas = ({ imagem, titulo, meta, texto, rota, direction }) => {
         <p>{texto}</p>
       </div>
 
-      <Botao cor="laranja">Saiba mais</Botao>
+      <Botao cor="laranja" rota={rota}>Saiba mais</Botao>
     </div>
   );
 };
