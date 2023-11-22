@@ -13,6 +13,8 @@ import motalidadeIntanil from "../../assets/imgHomePage/mortalidadeInfantil.png"
 import CombateDoenca from "../../assets/imgHomePage/CombateDoenca.png";
 import prevencaoDoenca from "../../assets/imgHomePage/prevencaoDoenca.png";
 import melhoriaSaude from "../../assets/imgHomePage/melhoriaSaude.png";
+import NumbersHome from "../../Components/NumbersHome/NumbersHome";
+import Time from "../../Components/Time/Time";
 
 const HomePage = () => {
   return (
@@ -137,6 +139,8 @@ const HomePage = () => {
           </section>
         </div>
       </div>
+      <NumbersHome/>
+      <Time/>
     </div>
   );
 };
