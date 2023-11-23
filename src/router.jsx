@@ -5,6 +5,7 @@ import MelhoriaGeralSaude from "./Pages/MelhoriaGeralSaude/MelhoriaGeralSaude";
 import DoencaTransmissiveis from "./Pages/DoençasTransmissiveis/DoencaTransmissiveis";
 import MortalidadeInfatil from "./Pages/MortalidadeInfantil/MortalidadeInfatil";
 import Header from "./Components/Header/Header";
+import DoencaTransmissiveisCopy from "./Pages/DoençasTransmissiveis/DoencaTransmissiveisCopy";
 
 function Router() {
   return (
@@ -20,11 +21,15 @@ function Router() {
           path="/Melhoria-Geral-Da-Saude"
           element={<MelhoriaGeralSaude />}
         />
-        <Route
-          path="/Doenca-Transmissiveis"
+        {/* <Route
+          path="/Prevencao-Doenca-Transmissiveis"
           element={<DoencaTransmissiveis />}
+        /> */}
+        <Route
+          path="/Prevencao-Doenca-Transmissiveis"
+          element={<DoencaTransmissiveisCopy />}
         />
-        <Route path="/Mortalidade-Infatil" element={<MortalidadeInfatil/>} />
+        <Route path="/Mortalidade-Infatil" element={<MortalidadeInfatil />} />
       </Routes>
     </BrowserRouter>
   );

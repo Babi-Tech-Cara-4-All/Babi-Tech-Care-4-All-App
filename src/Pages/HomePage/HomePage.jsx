@@ -137,7 +137,7 @@ genética única."
                 prematura por
                 doenças não
                 transmissíveis."
-                rota="/Tratamento-Doencas-Nao-Transmissiveis"
+                rota="/Prevencao-Doenca-Transmissiveis"
                 direction="column"
               />
               <Metas
