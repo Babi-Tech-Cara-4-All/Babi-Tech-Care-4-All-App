@@ -8,7 +8,7 @@ const MemberCard = ({img, nome, link}) => {
         <img src={img} alt="" />
       </div>
       <div className={styles.memberName}>
-        <a  src={link}>{nome}</a>
+        <a  href={link} target="_blank" rel="noreferrer">{nome}</a>
       </div>
     </div>
   )
