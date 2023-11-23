@@ -2,10 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
 import TratamentoDoencasNaoTransmissiveis from "./Pages/TratamentoDoencasNaoTransmissiveis/TratamentoDoencasNaoTransmissiveis";
 import MelhoriaGeralSaude from "./Pages/MelhoriaGeralSaude/MelhoriaGeralSaude";
-// import DoencaTransmissiveis from "./Pages/DoençasTransmissiveis/DoencaTransmissiveis";
 import MortalidadeInfatil from "./Pages/MortalidadeInfantil/MortalidadeInfatil";
 import Header from "./Components/Header/Header";
-import DoencaTransmissiveisCopy from "./Pages/DoençasTransmissiveis/DoencaTransmissiveisCopy";
+import DoencaTransmissiveis from "./Pages/DoençasTransmissiveis/DoencaTransmissiveis";
 
 function Router() {
   return (
@@ -21,13 +20,9 @@ function Router() {
           path="/Melhoria-Geral-Da-Saude"
           element={<MelhoriaGeralSaude />}
         />
-        {/* <Route
-          path="/Prevencao-Doenca-Transmissiveis"
-          element={<DoencaTransmissiveis />}
-        /> */}
         <Route
           path="/Prevencao-Doenca-Transmissiveis"
-          element={<DoencaTransmissiveisCopy />}
+          element={<DoencaTransmissiveis />}
         />
         <Route path="/Mortalidade-Infatil" element={<MortalidadeInfatil />} />
       </Routes>
