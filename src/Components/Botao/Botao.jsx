@@ -5,6 +5,7 @@ const Botao = ({ children, cor, rota }) => {
   const navigate = useNavigate();
 
   function navigateTo(route) {
+    window.scrollTo(0, 0);
     navigate(`${route}`);
   }
 

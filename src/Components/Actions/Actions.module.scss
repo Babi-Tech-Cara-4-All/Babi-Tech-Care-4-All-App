@@ -1,0 +1,39 @@
+.containerActions {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  .actionsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #e9720f;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    .actionsBotao {
+      margin: 2rem 0;
+      font-size: 1rem;
+      a {
+        text-decoration: none; 
+        color: inherit; 
+        cursor: pointer;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(0, 0, 0, 0);
+        background: #044B81;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 0.5rem 2rem;
+    }
+    }
+  }
+}

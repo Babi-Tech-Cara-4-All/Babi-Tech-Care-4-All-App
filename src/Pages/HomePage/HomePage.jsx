@@ -39,9 +39,29 @@ const HomePage = () => {
       <div className={styles.gridArea}>
         <div className={styles.bodyPage}>
           <section className={styles.caracteristicas}>
-            <HomeCaracteristicas img={prevencao}>Prevenção</HomeCaracteristicas>
-            <HomeCaracteristicas img={automacao}>Automação</HomeCaracteristicas>
-            <HomeCaracteristicas img={precisao}>Precisão</HomeCaracteristicas>
+            <HomeCaracteristicas
+              img={prevencao}
+              text="Soluções baseadas em dados, wearables e 
+apps capacitam o monitoramento eficaz da saúde, promovendo o autocuidado."
+            >
+              Prevenção
+            </HomeCaracteristicas>
+            <HomeCaracteristicas
+              img={automacao}
+              text="A medicina personalizada permite tratamentos sob medida para pacientes com base em
+sua composição
+genética única."
+            >
+              Automação
+            </HomeCaracteristicas>
+            <HomeCaracteristicas
+              img={precisao}
+              text="A medicina personalizada permite tratamentos sob medida para pacientes com base em
+sua composição
+genética única."
+            >
+              Precisão
+            </HomeCaracteristicas>
           </section>
           <section className={styles.videoPitchSection}>
             <div className={styles.text}>
@@ -117,7 +137,7 @@ const HomePage = () => {
                 prematura por
                 doenças não
                 transmissíveis."
-                rota="/Tratamento-Doencas-Nao-Transmissiveis"
+                rota="/Prevencao-Doenca-Transmissiveis"
                 direction="column"
               />
               <Metas
@@ -139,8 +159,8 @@ const HomePage = () => {
           </section>
         </div>
       </div>
-      <NumbersHome/>
-      <Time/>
+      <NumbersHome />
+      <Time />
     </div>
   );
 };

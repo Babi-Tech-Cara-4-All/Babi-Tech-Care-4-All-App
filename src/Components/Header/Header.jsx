@@ -13,6 +13,7 @@ const Header = () => {
   };
 
   function navigateTo(route) {
+    window.scrollTo(0, 0);
     navigate(`${route}`);
   }
 
@@ -51,7 +52,7 @@ const Header = () => {
                   </li>
                   <li
                     onClick={() => {
-                      navigateTo("/Doenca-Transmissiveis");
+                      navigateTo("/Prevencao-Doenca-Transmissiveis");
                       handleDropdownToggle()
                     }}
                   >
