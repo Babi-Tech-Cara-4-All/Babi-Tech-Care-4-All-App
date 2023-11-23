@@ -1,5 +1,4 @@
 import styles from "./DoencaTransmissiveisCopy.module.scss";
-import BannerDT from "../../assets/imgDoencasTransmissiveis/BannerDT.png";
 import vacina from "../../assets/imgDoencasTransmissiveis/vacina.png";
 import mascara from "../../assets/imgDoencasTransmissiveis/mascara.png";
 import IconBacterias from "../../assets/imgDoencasTransmissiveis/IconBacterias.png";
@@ -10,235 +9,127 @@ import IconFungos from "../../assets/imgDoencasTransmissiveis/IconFungos.png";
 import menina from "../../assets/imgDoencasTransmissiveis/menina.png";
 import mapa from "../../assets/imgDoencasTransmissiveis/mapa.png";
 import grafico from "../../assets/imgDoencasTransmissiveis/grafico.png";
+import Reason from "../../Components/Reason/Reason";
+import DoencaTransmissivel from "../../Components/DoencaTransmissivel/DoencaTransmissivel";
 
 const DoencaTransmissiveisCopy = () => {
   return (
-    <div className={styles.DoencaTransmissiveisContainer}>
-      {/* --- BANNER */}
-
-      <div className={styles.Banner}>
-        <img src={BannerDT} alt="Banner" />
-        <div className={styles.tituloBanner}>
-          Doenças transmissíveis, como tuberculose, HIV, malária e hepatite B,{" "}
+    <div className={styles.mortalidadeContainer}>
+      <div className={styles.bannerMortalidade}>
+        <p className={styles.infoContainer}>
+          Doenças transmissíveis, como tuberculose, HIV, malária e hepatite B,
           <br />
           ainda causam quase metade das mortes em países de baixa e média renda.
-        </div>
+        </p>
       </div>
-
-      {/*  BOX ODS */}
-
-      <div className={styles.odsContainer}>
-        <div className={styles.odsImages}>
-          <img className={styles.vacina} src={vacina} alt="baby"></img>
-          <img className={styles.mascara} src={mascara} alt="babies"></img>
-        </div>
-
-        <div className={styles.odsText}>
-          <h1>ODS 3.3 DA ONU</h1>
-          <h3>
-            Até 2030, acabar com as epidemias de AIDS, tuberculose, malária e
-            doenças tropicais negligenciadas, e combater a hepatite, doenças
-            transmitidas pela água, e outras doenças transmissíveis.
-          </h3>
-        </div>
-      </div>
-
-      {/* DOENÇAS TRANSMISSIVEIS E MORTALIDADES */}
-
-      <div className={styles.boxMortalidades}>
-        <div>
-          <h2 className={styles.txtMortalidades}>
-            Principais doenças transmissiveis e motalidades
-          </h2>
-        </div>
-
-        <div className={styles.Mortalidades}>
-          <div className={styles.blockMortalidades}>
-            <div className={styles.tituloMortalidades}>
-              <h3>HIV</h3>
+      <div className={styles.gridArea}>
+        <div className={styles.bodyPage}>
+          <section className={styles.odsContainer}>
+            <div className={styles.odsImages}>
+              <img className={styles.baby} src={vacina} alt="baby"></img>
+              <img className={styles.babies} src={mascara} alt="babies"></img>
             </div>
-
-            <div className={styles.bodyMortalidades}>
-              <p className={styles.pnum}>37.7 M</p>
-              <p className={styles.pfont}>De Casos</p>
-              <p className={styles.pnum}>680 K</p>
-              <p className={styles.pfont}>Mortes</p>
-            </div>
-          </div>
-
-          <div className={styles.blockMortalidades}>
-            <div className={styles.tituloMortalidadesOrange}>
-              <h3>Tuberculose</h3>
-            </div>
-
-            <div className={styles.bodyMortalidades}>
-              <p className={styles.pnum}>5.8 M</p>
-              <p className={styles.pfont}>De Casos</p>
-              <p className={styles.pnum}>1.3 M</p>
-              <p className={styles.pfont}>Mortes</p>
-            </div>
-          </div>
-
-          <div className={styles.blockMortalidades}>
-            <div className={styles.tituloMortalidades}>
-              <hDoencaTransmissiveisCopy3>Malaria</hDoencaTransmissiveisCopy3>
-            </div>
-
-            <div className={styles.bodyMortalidades}>
-              <p className={styles.pnum}>241 M</p>
-              <p className={styles.pfont}>De Casos</p>
-              <p className={styles.pnum}>627 K</p>
-              <p className={styles.pfont}>Mortes</p>
-            </div>
-          </div>
-
-          <div className={styles.blockMortalidades}>
-            <div className={styles.tituloMortalidadesOrange}>
-              <h3>Hepatite B</h3>
-            </div>
-
-            <div className={styles.bodyMortalidades}>
-              <p className={styles.pnum}>296 M</p>
-              <p className={styles.pfont}>De Casos</p>
-              <p className={styles.pnum}>820 K</p>
-              <p className={styles.pfont}>Mortes</p>
-            </div>
-          </div>
-
-          <div className={styles.blockMortalidades}>
-            <div className={styles.tituloMortalidades}>
-              <h3>DTNs</h3>
-            </div>
-
-            <div className={styles.bodyMortalidades}>
-              <p className={styles.pnum}>1,7 B</p>
-              <p className={styles.pfont}>De Casos</p>
-              <p className={styles.pnum}>750 K</p>
-              <p className={styles.pfont}>Mortes</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ICONS*/}
-      <div className={styles.boxCausas}>
-        <div>
-          <h2 clDoencaTransmissiveisCopyassName={styles.txtCausas}>AGENTES CAUSADORES</h2>
-        </div>
-
-        <div className={styles.Causas}>
-          <div className={styles.blockIcons}>
-            <div>
-              <img src={IconBacterias} alt="Bacterias" />
-            </div>
-            <div>
-              <h3>Bactérias</h3>
-            </div>
-          </div>
-
-          <div className={styles.blockIcons}>
-            <div>
-              <img src={IconMetazoarios} alt="Metazoários" />
-            </div>
-            <div>
-              <h3>Metazoários</h3>
-            </div>
-          </div>
-
-          <div className={styles.blockIcons}>
-            <div>
-              <img src={IconVirus} alt="Vírus" />
-            </div>
-            <div>
-              <h3>Vírus</h3>
-            </div>
-          </div>
-
-          <div className={styles.blockIcons}>
-            <div>
-              <img src={IconFungos} alt="Fungos" />
-            </div>
-            <div>
-              <h3>Fungos</h3>
-            </div>
-          </div>
-
-          <div className={styles.blockIcons}>
-            <div>
-              <img src={IconProtozoarios} alt="Protozoários" />
-            </div>
-            <div>
-              <h3>Protozoários</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* BOX DESIGUALDADE */}
-
-      <div className={styles.boxDesigualdade}>
-        <div className={styles.Mulher}>
-          <div className={styles.balaoMulher}>
-            <div className={styles.circulo}></div>
-
-            <div className={styles.balao}>
-              <div className={styles.txtBalao}>
-                <p>
-                  Em um mundo de avanços em saúde, a desigualdade persistente
-                  nos lembra da necessidade urgente de garantir que cada vida
-                  conte
-                </p>
+            <div className={styles.odsText}>
+              <div>
+                <h1>ODS 3.3 DA ONU</h1>
+                <h3>
+                  Até 2030, acabar com as epidemias de AIDS, tuberculose,
+                  malária e doenças tropicais negligenciadas, e combater a
+                  hepatite, doenças transmitidas pela água, e outras doenças
+                  transmissíveis.
+                </h3>
               </div>
             </div>
+          </section>
+          <section className={styles.gridDoencas}>
+            <h2>Principais doenças transmissiveis e motalidades</h2>
+            <div className={styles.gridDoencasContainer}>
+              <DoencaTransmissivel cor="azul" nome="HIV" casos="37.7 M" mortes="680 K"/>
+              <DoencaTransmissivel cor="laranja" nome="Tuberculose" casos="5.8 M" mortes="1.3 M"/>
+              <DoencaTransmissivel cor="azul" nome="Malaria" casos="241 M" mortes="627 K"/>
+              <DoencaTransmissivel cor="laranja" nome="Hepatite B" casos="296 M" mortes="820 K"/>
+              <DoencaTransmissivel cor="azul" nome="DTNs" casos="1.7 B" mortes="750 K"/>
+            </div>
+          </section>
+          <section className={styles.gridCausadores}>
+            <h2>AGENTES CAUSADORES</h2>
+            <div className={styles.gridCausadoresContainer}>
+              <Reason icone={IconBacterias} texto="Bacterias" />
+              <Reason icone={IconMetazoarios} texto="Metazoários" />
+              <Reason icone={IconVirus} texto="Vírus" />
+              <Reason icone={IconFungos} texto="Fungos" />
+              <Reason icone={IconProtozoarios} texto="Protozoários" />
+            </div>
+          </section>
+          {/* <section className={styles.dataContainer}>
+          <div className={styles.dataImage}>
+            <h1>Taxa de Mortalidade Infantil - Brasil</h1>
+            <img src={dado1} alt="taxa de mortalidade"></img>
+            <p>
+              Taxa de Mortalidade Infantil (por mil Nascidos Vivos). Regiões,
+              1990 a 2019
+            </p>
           </div>
-
-          <div className={styles.txtMulher}>
-            <ul>
-              <li>
-                Em muitos países, a realização de testes para HIV é
-                substancialmente mais baixa entre populações empobrecidas,
-                mal-educadas ou em áreas rurais.{" "}
-              </li>
-              <br />
-              <li>
-                Jovens mulheres (15-24 anos) na Região Africana da OMS têm maior
-                risco de infecção por HIV do que seus colegas masculinos.
-              </li>
-              <br />
-              <li>
-                Globalmente, os homens são menos propensos a fazer o teste de
-                HIV ou receber terapia antirretroviral.
-              </li>
-            </ul>
+          <div className={styles.dataText}>
+            <p className={styles.dataText1}>
+              A mortalidade infantil é um importante indicador de saúde e
+              condições de vida de uma população.
+            </p>
+            <p className={styles.dataText2}>
+              No Brasil, vem-se observando um declínio na taxa de mortalidade
+              nesse grupo.
+            </p>
           </div>
-
-          <div className={styles.btnMulher}>
-            <h2>Saiba Mais</h2>
-            {/* LINK DO BOTAO
-      https://iris.who.int/bitstream/handle/10665/356584/9789240051140-eng.pdf?sequence=1 */}
-          </div>
+        </section>
+*/}
         </div>
-
-        <div className={styles.dados}>
-          <div>
-            <img className={styles.mapa} src={mapa} alt="mapa" />
-            <figcaption>
-              Estimated numbers of people (all ages) living with HIV, 2020
-            </figcaption>
+      </div>
+      {/* <section className={styles.dataSection}>
+      <div className={styles.gridAreaData}>
+        <div className={styles.bodyData}>
+          <div className={styles.dataBox}>
+            <p>
+              Taxa de mortalidade infantil (menores de um ano de idade) - 2019
+              (para cada mil nascidos vivos)
+            </p>
+            <img src={dado2} alt="dado2"></img>
           </div>
-
-          <div>
-            <img className={styles.grafico} src={grafico} alt="grafico" />
-            <figcaption>
-              New HIV infections (per 1000 uninfected population), by WHO region
-              and global, 2000–2020
-            </figcaption>
+          <div className={styles.dataBox}>
+            <p>
+              Taxa de mortalidade na infância (menores de um cinco de idade) -
+              2019 (para cada mil nascidos vivos)
+            </p>
+            <img src={dado3} alt="dado3"></img>
           </div>
         </div>
       </div>
+    </section>
 
-      {/* A MULHER ESTA AQUI */}
-      <img className={styles.Mulherimg} src={menina} alt="muie" />
+    <section className={styles.flipCard}>
+      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <div className={styles.front}>
+          <img src={kids} alt="" />
+          <button onClick={(e) => flipCard(e)}>Click to flip</button>
+        </div>
+        <div className={styles.back}>
+          <p>
+            O Brasil vem avançando na redução da mortalidade infantil, mas
+            ainda é preciso um grande esforço para enfrentar as diferenças
+            regionais e alcançar patamares mais baixos.
+          </p>
+          <div className={styles.starSpace}>
+            <img src={star} alt="star" />
+            <img src={arrow} alt="arrow" />
+          </div>
+          <p>
+            A mobilização não somente de todas as esferas de governo, mas de
+            toda a sociedade e de cada cidadão é importante para consolidar
+            essa redução, num movimento em defesa da vida.
+          </p>
+          <button onClick={(e) => flipCard(e)}>Click to flip</button>
+        </div>
+      </ReactCardFlip>
+    </section> */}
     </div>
   );
 };

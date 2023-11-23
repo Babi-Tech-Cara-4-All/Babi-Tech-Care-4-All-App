@@ -19,7 +19,7 @@ const DoencaTransmissiveis = () => {
       <div className={styles.Banner}>
         <img src={BannerDT} alt="Banner" />
         <div className={styles.tituloBanner}>
-          Doenças transmissíveis, como tuberculose, HIV, malária e hepatite B,{" "}
+          Doenças transmissíveis, como tuberculose, HIV, malária e hepatite B,
           <br />
           ainda causam quase metade das mortes em países de baixa e média renda.
         </div>
