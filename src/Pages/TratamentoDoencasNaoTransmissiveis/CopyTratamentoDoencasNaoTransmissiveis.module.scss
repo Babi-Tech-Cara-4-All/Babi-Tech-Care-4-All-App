@@ -265,23 +265,36 @@
       gap: 13rem;
       font-family: Comfortaa;
       margin: 6rem 0;
-      .gridPrevencoes {
+      .doencas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        h2 {
+          color: #e9720f;
+          font-size: 2.5rem;
+          font-weight: 900;
+        }
+        .doencasFlex {
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+        }
+      }
+      .risco{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4rem;
         h2 {
           color: #044b81;
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: 900;
         }
-        .gridPrevencoesContainer {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(2, auto);
-          column-gap: 10rem;
-          row-gap: 5rem;
-          align-self: center;
+        .riscoFlex{
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
         }
       }
       .solitarioInformation {

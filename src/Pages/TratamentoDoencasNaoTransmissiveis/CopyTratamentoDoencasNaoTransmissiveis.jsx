@@ -1,4 +1,5 @@
 import styles from "./CopyTratamentoDoencasNaoTransmissiveis.module.scss";
+import Reason from "../../Components/Reason/Reason";
 import imgAbs from "../../assets/imgTratamentoDoencasNaoTransmissiveis/imgAbs.png";
 import imgRela from "../../assets/imgTratamentoDoencasNaoTransmissiveis/imgRela.png";
 import mulherFalando from "../../assets/imgTratamentoDoencasNaoTransmissiveis/mulherFalando.png";
@@ -49,60 +50,59 @@ const CopyTratamentoDoencasNaoTransmissiveis = () => {
             <h2>O que é uma doença crônica?</h2>
             <img src={mulherFalando} alt="" />
           </section>
-          {/* <section className={styles.gridCausadores}>
-            <h2>AGENTES CAUSADORES</h2>
-            <div className={styles.gridCausadoresContainer}>
-              <Reason
-                icone={IconBacterias}
-                texto="Bacterias"
-                link="https://mundoeducacao.uol.com.br/amp/doencas/doencas-por-bacterias.htm"
-              />
-              <Reason
-                icone={IconMetazoarios}
-                texto="Metazoários"
-                link="https://www.bio.fiocruz.br/index.php/br/esquistossomose-e-outras-doencas-parasitarias"
-              />
-              <Reason
-                icone={IconVirus}
-                texto="Vírus"
-                link="https://m.brasilescola.uol.com.br/amp/doencas/doencas-causadas-virus.htm"
-              />
-              <Reason
-                icone={IconFungos}
-                texto="Fungos"
-                link="https://www.tuasaude.com/doencas-causadas-por-fungos/"
-              />
-              <Reason
-                icone={IconProtozoarios}
-                texto="Protozoários"
-                link="https://midia.atp.usp.br/plc/plc0501/impressos/plc0501_06.pdf"
-              />
-            </div>
-          </section> */}
         </div>
       </div>
       <section className={styles.NTransmissivelSection}>
-            <div className={styles.gridNTransmissivel}>
-              <div className={styles.bodyNTransmissivel}>
-                <div className={styles.informacoes}>
-                  <div className={styles.grafPizza}>
-                    <img src={grafpizza} alt="grafico de pizza" />
-                    <p>
-                      69% das mortes ocorridas no Brasil em 2016 <br /> foram
-                      por doenças crônicas não <br /> transmissíveis.
-                    </p>
-                  </div>
-                  <p className={styles.informacoesDestaque}>
-                    Maior alerta é na faixa de 30 a 69 anos, quando maioria das
-                    mortes são consideradas evitáveis
-                  </p>
-                </div>
-                <div className={styles.grafico}>
-                  <img src={graflinha} alt="grafico de Linha" />
-                </div>
+        <div className={styles.gridNTransmissivel}>
+          <div className={styles.bodyNTransmissivel}>
+            <div className={styles.informacoes}>
+              <div className={styles.grafPizza}>
+                <img src={grafpizza} alt="grafico de pizza" />
+                <p>
+                  69% das mortes ocorridas no Brasil em 2016 <br /> foram por
+                  doenças crônicas não <br /> transmissíveis.
+                </p>
               </div>
+              <p className={styles.informacoesDestaque}>
+                Maior alerta é na faixa de 30 a 69 anos, quando maioria das
+                mortes são consideradas evitáveis
+              </p>
             </div>
-          </section>
+            <div className={styles.grafico}>
+              <img src={graflinha} alt="grafico de Linha" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.section2}>
+        <section className={styles.gridArea2}>
+          <div className={styles.bodyPage2}>
+            <section className={styles.doencas}>
+              <h2>Doenças</h2>
+              <div className={styles.doencasFlex}>
+                <Reason icone={diabetes} texto="Diabetes" />
+                <Reason
+                  icone={mentais}
+                  texto="Condições mentais e neurológicas"
+                />
+                <Reason icone={cardio} texto="Doenças cardiovasculares" />
+                <Reason icone={respiratorias} texto="Doenças Respiratórias" />
+                <Reason icone={cancer} texto="Câncer" />
+              </div>
+            </section>
+            <section className={styles.risco}>
+              <h2>Fatores de Risco</h2>
+              <div className={styles.riscoFlex}>
+                <Reason icone={alimentacao} texto="Alimentação inadequada" />
+                <Reason icone={alcool} texto="Uso abusivo de álcool" />
+                <Reason icone={poluicao} texto="Poluiçãou do ar" />
+                <Reason icone={tabagismo} texto="Tabagismo" />
+                <Reason icone={sedentarismo} texto="Sedentarismo" />
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
       {/* <section className={styles.informationSection}>
         <div className={styles.gridInformation}>
           <div className={styles.bodyInformation}>
