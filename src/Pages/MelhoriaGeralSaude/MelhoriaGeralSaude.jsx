@@ -6,12 +6,6 @@ import c2 from "../../assets/imgMelhoria/c2.png";
 import c3 from "../../assets/imgMelhoria/c3.png";
 import c4 from "../../assets/imgMelhoria/c4.png";
 import c5 from "../../assets/imgMelhoria/c5.png";
-import i1 from "../../assets/imgMelhoria/i1.png";
-import i2 from "../../assets/imgMelhoria/i2.png";
-import i3 from "../../assets/imgMelhoria/i3.png";
-import i4 from "../../assets/imgMelhoria/i4.png";
-import i5 from "../../assets/imgMelhoria/i5.png";
-import i6 from "../../assets/imgMelhoria/i6.png";
 import info2 from "../../assets/imgMelhoria/info2.png";
 
 const MelhoriaGeralSaude = () => {
@@ -117,7 +111,7 @@ const MelhoriaGeralSaude = () => {
           </section>
           <section className={styles.imagensTextoContainer}>
             <h1>PODCASTS</h1>
-            <section className={styles.imagensTextoGrid}>
+            <div className={styles.imagensTextoGrid}>
               <a
                 href="https://soundcloud.com/saudebrasil/o-que-o-cigarro-tem-a-ver-com-o-ganho-ou-perda-de-peso"
                 target="_blank"
@@ -168,11 +162,19 @@ const MelhoriaGeralSaude = () => {
                 className={styles.imagensTexto6}
               >
                 {" "}
-                <p>
-                  Como está sua saúde mental em tempos de pós - pandemia?
-                </p>
+                <p>Como está sua saúde mental em tempos de pós - pandemia?</p>
               </a>
-            </section>
+            </div>
+          </section>
+          <section className={styles.kigsFund}>
+            <img src={info2} alt="" />
+            <p>
+              O King’s Fund descreve esse modo de pensar sobre a saúde da
+              população como um “sistema de saúde da população”, no qual os
+              quatro pilares estão interconectados e a ação é coordenada entre
+              eles, e não dentro de cada um, isoladamente. <br /><br /><br />
+              Melhorar a saúde da população requer ação em todos os quatro pilares dela e, crucialmente, nas interfaces e sobreposições entre eles.
+            </p>
           </section>
         </div>
       </div>
