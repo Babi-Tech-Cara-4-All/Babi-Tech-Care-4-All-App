@@ -1,0 +1,343 @@
+.mortalidadeContainer {
+  width: 100%;
+
+  .bannerMortalidade {
+    margin-top: 6rem;
+    height: 80vh;
+    background-image: url("../../assets/imgDoencasTransmissiveis/BannerDT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Comfortaa;
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: 9fr 3fr 1fr;
+    grid-template-areas:
+      "."
+      "info"
+      ".";
+    .infoContainer {
+      text-align: center;
+      padding: 4rem;
+      grid-area: info;
+      font-size: 2rem;
+      background: rgba(4, 75, 129, 0.34);
+    }
+  }
+  .gridArea {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". main .";
+    .bodyPage {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      gap: 13rem;
+      font-family: Comfortaa;
+      margin: 6rem 0 0 0;
+      .odsContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 12rem;
+        .odsImages {
+          position: relative;
+          box-sizing: content-box;
+          img {
+            width: 28rem;
+            display: block;
+          }
+          .babies {
+            position: absolute;
+            top: 7rem;
+            margin-left: 13rem;
+          }
+        }
+        .odsText {
+          display: flex;
+          flex-direction: column;
+          font-family: Comfortaa;
+          color: white;
+          gap: 3rem;
+          box-sizing: border-box;
+          div {
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column;
+            h1 {
+              position: absolute;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              padding: 1.5rem 2rem;
+              border-radius: 2rem;
+              background-color: #e9720f;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            h3 {
+              text-align: center;
+              font-size: 1.75rem;
+              padding: 2rem 2rem;
+              border-radius: 2rem;
+              background-color: #647cb4;
+              margin: 4.5rem 0 0 4rem;
+            }
+          }
+        }
+      }
+
+      .dataContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        .dataImage {
+          max-width: 50%;
+          display: flex;
+          flex-direction: column;
+          font-family: Comfortaa;
+          width: 100%;
+          gap: 1rem;
+          h1 {
+            font-size: 2.3rem;
+            color: #044b81;
+            font-weight: 700;
+          }
+          img {
+            width: 100%;
+          }
+          p {
+            text-align: center;
+            font-size: 1rem;
+          }
+        }
+        .dataText {
+          max-width: 50%;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          color: white;
+          font-size: 1.5rem;
+          font-family: Comfortaa;
+          max-width: 40%;
+          .dataText1 {
+            max-width: 70%;
+            background-color: #044b81;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 2rem;
+            text-align: center;
+            padding: 3rem;
+            z-index: -1;
+          }
+          .dataText2 {
+            position: relative;
+            max-width: 70%;
+            text-wrap: wrap;
+            background-color: #647cb4;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 2rem;
+            text-align: center;
+            padding: 3rem;
+            margin-top: -5%;
+            margin-left: 20%;
+          }
+        }
+      }
+      .gridDoencas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        h2 {
+          color: #044b81;
+          font-size: 2.5rem;
+          font-weight: 900;
+        }
+        .gridDoencasContainer {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+      .gridCausadores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        h2 {
+          color: #e9720f;
+          font-size: 2.5rem;
+          font-weight: 900;
+        }
+        .gridCausadoresContainer {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+.informationSection {
+  font-family: Comfortaa;
+  background-color: #f2cc75;
+
+  .gridInformation {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". main .";
+
+    .bodyInformation {
+      grid-area: main;
+      display: flex;
+      flex-direction: row;
+      font-family: Comfortaa;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      gap: 5rem;
+      max-width: 100%;
+
+      .informacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        ul {
+          list-style-type: disc;
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+      }
+
+      .maps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5rem;
+        max-width: 500px; 
+      }
+    }
+  }
+}
+.section2 {
+  width: 100%;
+
+  .gridArea2 {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". main2 .";
+    .bodyPage2 {
+      grid-area: main2;
+      display: flex;
+      flex-direction: column;
+      gap: 13rem;
+      font-family: Comfortaa;
+      margin: 6rem 0;
+      .gridPrevencoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        max-width: 100%;
+        h2 {
+          color: #044b81;
+          font-size: 3rem;
+          font-weight: 900;
+        }
+        .gridPrevencoesContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, auto);
+          column-gap: 3%;
+          row-gap: 4%;
+          align-self: center;
+          width: 100%;
+        }
+      }
+      .solitarioInformation {
+        display: flex;
+        flex-direction: column;
+        font-family: Comfortaa;
+        color: white;
+        gap: 3rem;
+        box-sizing: border-box;
+        width: 100%;
+        div {
+          box-sizing: content-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h3 {
+            align-self: first baseline;
+            width: 87%;
+            text-align: start;
+            font-size: 1.75rem;
+            padding: 3rem 3rem;
+            border-radius: 2rem;
+            background-color: #647cb4;
+            li {
+              margin: 1rem 0 0 2rem;
+            }
+          }
+          a {
+            align-self: last baseline;
+            margin-top: -2rem;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding: 2rem 6rem;
+            border-radius: 2rem;
+            background-color: #e9720f;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+
+.actionsSection {
+  font-family: Comfortaa;
+  background-color: #e4eafa;
+  .gridActions {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". main .";
+
+    .bodyActions {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      font-family: Comfortaa;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+      gap: 3rem;
+      h2 {
+        color: #e9720f;
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+      .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+      }
+    }
+  }
+}

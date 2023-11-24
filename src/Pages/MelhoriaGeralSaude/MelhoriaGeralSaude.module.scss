@@ -1,0 +1,227 @@
+.nTransmissivelContainer {
+  width: 100%;
+
+  .bannerNTransmissivel {
+    margin-top: 4rem;
+    height: 80vh;
+    background-image: url("../../assets/imgMelhoria/Banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Comfortaa;
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: 9fr 3fr 1fr;
+    grid-template-areas:
+      "."
+      "info"
+      ".";
+    .nTransmissivelContainer {
+      box-sizing: border-box;
+      text-align: center;
+      padding: 4rem;
+      grid-area: info;
+      font-size: 2rem;
+      background: rgba(224, 54, 0, 0.52);
+      text-wrap: wrap;
+    }
+  }
+  .gridArea {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". main .";
+    .bodyPage {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      gap: 10rem;
+      font-family: Comfortaa;
+      margin: 6rem 0 0 0;
+      .odsContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 8rem;
+        color: #fff;
+        .odsInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          width: 100%;
+          .odsList {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1rem;
+            justify-content: space-between;
+            width: 100%;
+            .tituloAtivo {
+              padding: 1rem 1.7rem;
+              font-size: 1.5rem;
+              font-weight: 700;
+              border-radius: 3rem;
+              background: #e9720f;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            .tituloInativo {
+              padding: 1rem 1.7rem;
+              font-size: 1.5rem;
+              font-weight: 700;
+              border-radius: 3rem;
+              background: #9c9c9c;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+          }
+          .odsText {
+            border-radius: 1.5rem;
+            background: #647cb4;
+            padding: 2rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .carrossel {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
+      .botao1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: #e9720f;
+        color: white;
+        font-family: "Comfortaa";
+        border: 1px solid #e9720f;
+        margin-left: 1rem;
+      }
+    }
+    .imagensTextoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      h1 {
+        color: #000;
+        font-family: Comfortaa;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 5rem;
+        border-bottom: 2px solid #000;
+      }
+      .imagensTextoGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 3rem;
+        row-gap: 5rem;
+        align-self: center;
+        color: #fff;
+        font-size: 1.3rem;
+        .imagensTexto1 {
+          color: inherit;
+          cursor: pointer;
+          background-image: url("../../assets/imgMelhoria/i1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto2 {
+          background-image: url("../../assets/imgMelhoria/i2.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto3 {
+          background-image: url("../../assets/imgMelhoria/i3.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto4 {
+          background-image: url("../../assets/imgMelhoria/i4.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto5 {
+          background-image: url("../../assets/imgMelhoria/i5.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto6 {
+          background-image: url("../../assets/imgMelhoria/i6.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+      }
+    }
+    .kigsFund{
+      display: flex;
+      flex-direction: row;
+      height: 18%;
+      margin-bottom: 5rem;
+      img{
+        width: 150%;
+        height: auto;
+    
+      }
+      p{
+        background-image: url("../../assets/imgMelhoria/paper.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5rem 9rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
