@@ -89,8 +89,9 @@ const Header = () => {
           <li onClick={() => navigateTo("/Melhoria-Geral-Da-Saude")}>
             Melhoria
           </li>
+          <Botao><li>Fale conosco</li></Botao>
         </ul>
-        <Botao>Fale conosco</Botao>
+
       </nav>
     </header>
   );
