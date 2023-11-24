@@ -1,7 +1,11 @@
-import styles from './MelhoriaGeralSaude.module.scss';
-import Banner1 from "../../assets/imgMelhoria/Banner1.png";
+import styles from "./MelhoriaGeralSaude.module.scss";
+import { useState, useEffect } from "react";
 import ODS3 from "../../assets/imgMelhoria/ODS3.png";
 import c1 from "../../assets/imgMelhoria/c1.png";
+import c2 from "../../assets/imgMelhoria/c2.png";
+import c3 from "../../assets/imgMelhoria/c3.png";
+import c4 from "../../assets/imgMelhoria/c4.png";
+import c5 from "../../assets/imgMelhoria/c5.png";
 import i1 from "../../assets/imgMelhoria/i1.png";
 import i2 from "../../assets/imgMelhoria/i2.png";
 import i3 from "../../assets/imgMelhoria/i3.png";
@@ -11,112 +15,221 @@ import i6 from "../../assets/imgMelhoria/i6.png";
 import info2 from "../../assets/imgMelhoria/info2.png";
 
 const MelhoriaGeralSaude = () => {
+  const [textoVisivel, setTextoVisivel] = useState("");
+  const [tituloAtivo, setTituloAtivo] = useState("");
+
+  const odsList = [
+    {
+      titulo: "ODS 3.5",
+      texto:
+        "Reforçar a prevenção e o tratamento dos problemas decorrentes do uso de substâncias, incluindo o abuso de drogas entorpecentes e uso nocivo do álcool.",
+    },
+    {
+      titulo: "ODS 3.6",
+      texto:
+        "Até 2030, reduzir pela metade as mortes e lesões por acidentes no trânsito.",
+    },
+    {
+      titulo: "ODS 3.7",
+      texto:
+        "Até 2030, assegurar o acesso universal aos serviços e insumos de saúde sexual e reprodutiva, incluindo o planejamento reprodutivo, à informação e educação, bem como a integração da saúde reprodutiva em estratégias e programas nacionais.",
+    },
+    {
+      titulo: "ODS 3.8",
+      texto:
+        "Assegurar, por meio do Sistema Único de Saúde (SUS), a cobertura universal de saúde, o acesso a serviços essenciais de saúde de qualidade em todos os níveis de atenção e o acesso a medicamentos e vacinas essenciais seguros, eficazes e de qualidade que estejam incorporados ao rol de produtos oferecidos pelo SUS.",
+    },
+    {
+      titulo: "ODS 3.9",
+      texto:
+        "Até 2030, reduzir substancialmente o número de mortes e doenças por produtos químicos perigosos, contaminação e poluição do ar e água do solo.",
+    },
+  ];
+  const handleClick = (titulo, texto) => {
+    setTituloAtivo(titulo);
+    setTextoVisivel(texto);
+  };
+
   return (
-    <div>
-
-      <div className={styles.bannerContainer}>
-
-        <img src={Banner1} alt="Banner"/>
-
-        <div className={styles.tituloBanner}>Em busca do bem-estar global, a promoção da saúde emerge como um pilar <br /> fundamental, alinhando-se a ODS 3, que visa assegurar uma vida saudável e  <br />promover o bem-estar para todos, em todas as idades.</div>
-
+    <div className={styles.nTransmissivelContainer}>
+      <div className={styles.bannerNTransmissivel}>
+        <p className={styles.nTransmissivelContainer}>
+          Em busca do bem-estar global, a promoção da saúde emerge como um pilar
+          fundamental, alinhando-se a ODS 3, que visa assegurar uma vida
+          saudável e promover o bem-estar para todos, em todas as idades.
+        </p>
       </div>
-
-      <div className={styles.ContainerOds}>
-
-        <div className={styles.botoesOds}>
-
-          <div className={styles.btn35}>ODS 3.5</div>
-
-          <div className={styles.btn36}>ODS 3.6</div>
-
-          <div className={styles.btn37}>ODS 3.7</div>
-
-          <div className={styles.btn38}>ODS 3.8</div>
-          
-          <div className={styles.btn39}>ODS 3.9</div>
-
-        </div>
-
-       </div>
-
-
-       <div className={styles.ods3}>
-        <img src={ODS3} alt="Banner"/>
-        </div>
-
-        <div className={styles.txtods}><p>Reforçar a prevenção e o tratamento dos problemas decorrentes do uso de substâncias, incluindo o abuso de drogas entorpecentes e uso nocivo do álcool.</p></div>
-
-
-      <div className={styles.c1}>
-       <img src={c1} alt="c1"/>
-      </div>
-
-      <div className={styles.txtpodcast}>PODCASTS</div>
-      <hr className={styles.hr} />
-
-      <div className={styles.Containerpodcast1}>
-        <div className={styles.i1}>
-          <a href="https://soundcloud.com/saudebrasil/o-que-o-cigarro-tem-a-ver-com-o-ganho-ou-perda-de-peso" target="_blank" ><img src={i1} alt="i1"/></a>
-          <p className={styles.txtpPodcast}>O que cigarro tem a ver com ganho ou perda de peso?</p>
-        </div>
-
-        <div className={styles.i2}>
-          <a href="https://soundcloud.com/saudebrasil/como-se-beneficiar-da-alimentacao-saudavel" target="_blank" ><img src={i2} alt="i2"/></a>
-          <p className={styles.txtpPodcast}>Como se beneficiar da alimentação saudável?</p>
-        </div>
-
-        <div className={styles.i3}>
-          <a href="https://soundcloud.com/saudebrasil/como-a-pratica-de-atividade-fisica-pode-melhorar-a-disposicao" target="_blank"><img src={i3} alt="i3"/></a>
-          <p className={styles.txtpPodcast}>Como a atividade física pode ajudar na disposição</p>
+      <div className={styles.gridArea}>
+        <div className={styles.bodyPage}>
+          <section className={styles.odsContainer}>
+            <div className={styles.odsInfo}>
+              <div className={styles.odsList}>
+                {odsList.map((ods, index) => (
+                  <h3
+                    key={index}
+                    onClick={() => handleClick(ods.titulo, ods.texto)}
+                    className={
+                      ods.titulo === tituloAtivo
+                        ? styles.tituloAtivo
+                        : styles.tituloInativo
+                    }
+                  >
+                    {ods.titulo}
+                  </h3>
+                ))}
+              </div>
+              <p className={styles.odsText}>{textoVisivel}</p>
+            </div>
+            <img src={ODS3} alt="" />
+          </section>
+          <section className={styles.carrossel}>
+            <img src={c1} alt="" />
+            <img src={c2} alt="" />
+            <img src={c3} alt="" />
+            <img src={c4} alt="" />
+            <img src={c5} alt="" />
+          </section>
         </div>
       </div>
-
-      <div className={styles.Containerpodcast2}>
-        <div className={styles.i4}>
-          <a href="https://soundcloud.com/saudebrasil/aleitamento-materno-protege-contra-o-cancer-de-mama" target="_blank"><img src={i4} alt="i4"/></a>
-          <p className={styles.txtpPodcast}>Aleitamento materno protege contra o câncer de mama</p>
-        </div>
-
-        <div className={styles.i5}>
-          <a href="https://www.boaconsulta.com/blog/aplicativos-saude-bem-estar/" target="_blank"><img src={i5} alt="i5"/></a>
-          <p className={styles.txtpPodcast}>Aplicativos de saúde que você precisa conhecer!</p>
-        </div>
-
-        <div className={styles.i6}>
-          <a href="https://soundcloud.com/saudebrasil/como-esta-sua-saude-mental-em-tempos-de-pandemia" target="_blank"><img src={i6} alt="i6"/></a>
-          <p className={styles.txtpPodcast}>Como está sua saúde mental em tempos de pós - pandemia?</p>
+      {/* <div className={styles.gridArea}>
+        <div className={styles.bodyPage}>
+          <section className={styles.odsContainer}>
+            <div className={styles.odsImages}>
+              <img className={styles.baby} src={imgAbs} alt="baby"></img>
+              <img className={styles.babies} src={imgRela} alt="babies"></img>
+            </div>
+            <div className={styles.odsText}>
+              <div>
+                <h1>ODS 3.4 DA ONU</h1>
+                <h3>
+                  Até 2030, reduzir em um terço a mortalidade prematura por
+                  doenças não transmissíveis via prevenção e tratamento,
+                  promover a saúde mental e o bem-estar, a saúde do trabalhador
+                  e da trabalhadora, e prevenir o suicídio, alterando
+                  significativamente a tendência de aumento.
+                </h3>
+              </div>
+            </div>
+          </section>
+          <section className={styles.mulherFalando}>
+            <h2>O que é uma doença crônica?</h2>
+            <img src={mulherFalando} alt="" />
+          </section>
         </div>
       </div>
-
-      <div className={styles.info2}>
-
-
-
-
-        <div className={styles.imginfo2}>
-          <img src={info2} alt="info2"/>
+      <section className={styles.NTransmissivelSection}>
+        <div className={styles.gridNTransmissivel}>
+          <div className={styles.bodyNTransmissivel}>
+            <div className={styles.informacoes}>
+              <div className={styles.grafPizza}>
+                <img src={grafpizza} alt="grafico de pizza" />
+                <p>
+                  69% das mortes ocorridas no Brasil em 2016 <br /> foram por
+                  doenças crônicas não <br /> transmissíveis.
+                </p>
+              </div>
+              <p className={styles.informacoesDestaque}>
+                Maior alerta é na faixa de 30 a 69 anos, quando maioria das
+                mortes são consideradas evitáveis
+              </p>
+            </div>
+            <div className={styles.grafico}>
+              <img src={graflinha} alt="grafico de Linha" />
+            </div>
+          </div>
         </div>
-
-        <div className={styles.quadrocinza}>
-          
-          <div className={styles.quadroinfo1}> <p>O King’s Fund descreve esse modo de pensar sobre a saúde da população como um “sistema de saúde da população”, no qual os quatro pilares estão interconectados e a ação é coordenada entre eles, e não dentro de cada um, isoladamente.</p></div>
-
-          <div className={styles.quadroinfo2}><p>Melhorar a saúde da população requer ação em todos os quatro pilares dela e, crucialmente, nas interfaces e sobreposições entre eles.</p></div>
-
+      </section>
+      <section className={styles.section2}>
+        <section className={styles.gridArea2}>
+          <div className={styles.bodyPage2}>
+            <section className={styles.doencas}>
+              <h2>Doenças</h2>
+              <div className={styles.doencasFlex}>
+                <Reason icone={diabetes} texto="Diabetes" />
+                <Reason
+                  icone={mentais}
+                  texto="Condições mentais e neurológicas"
+                />
+                <Reason icone={cardio} texto="Doenças cardiovasculares" />
+                <Reason icone={respiratorias} texto="Doenças Respiratórias" />
+                <Reason icone={cancer} texto="Câncer" />
+              </div>
+            </section>
+            <section className={styles.doencas}>
+              <h2 className={styles.doencasH1azul}>Fatores de Risco</h2>
+              <div className={styles.doencasFlex}>
+                <Reason icone={alimentacao} texto="Alimentação inadequada" />
+                <Reason icone={alcool} texto="Uso abusivo de álcool" />
+                <Reason icone={poluicao} texto="Poluiçãou do ar" />
+                <Reason icone={tabagismo} texto="Tabagismo" />
+                <Reason icone={sedentarismo} texto="Sedentarismo" />
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+      <section className={styles.BemEstarSection}>
+        <div className={styles.gridBemEstar}>
+          <div className={styles.bodyBemEstar}>
+            <div className={styles.headerBemEstar}>
+              <h1 className={styles.headerH1}>O Bem-Estar</h1>
+              <p className={styles.headerP}>
+                Conforme a Organização Mundial da Saúde, a definição que temos
+                sobre saúde é “um estado de completo bem-estar físico, mental e
+                social, e não apenas a ausência de doenças”
+              </p>
+            </div>
+            <div className={styles.bodyBemEstar}>
+              <BemEstarItem cor="azul" nome="Físico">
+                <p>
+                  Se refere a condição, ausência de doenças associada a um bom
+                  metabolismo.
+                </p>
+              </BemEstarItem>
+              <BemEstarItem cor="azul" nome="Econômico">
+                <p>Está relacionado a condições monetárias.</p>
+              </BemEstarItem>
+              <BemEstarItem cor="azul" nome="Social">
+                <p>
+                  Relacionado a qualidade de vida, envolvendo relações, prazer,
+                  liberdade e saúde ambiental.
+                </p>
+              </BemEstarItem>
+              <BemEstarItem cor="azul" nome="Mental">
+                <p>
+                  É o equilíbrio de sentimentos e emoções e o controle sobre
+                  eles.
+                </p>
+              </BemEstarItem>
+            </div>
+          </div>
         </div>
-
-
-
-      </div>
-       
-        <div className={styles.circulo1}> </div>
-
-        <div className={styles.circulo2}> </div>
-      
-
+      </section>
+      <section className={styles.TecnlogiaSection}>
+        <div className={styles.gridTecnlogia}>
+          <div className={styles.bodyTecnlogia}>
+            <img src={relogio} alt="" />
+            <div className={styles.TecnlogiaItens}>
+              <h1>Superheroína: A Tecnologia!</h1>
+              <ul>
+                <li>+ monitoramento da própria saúde</li>
+                <li>+ alimentação saudável </li>
+                <li>+ exercícios</li>
+                <li>+ registros de condições</li>
+                <li>
+                  {" "}
+                  <span>
+                    {" "}
+                    = Prevenção de doenças e melhoria no tratamento e cuidado!
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> */}
     </div>
-  )
-}
+  );
+};
 
-export default MelhoriaGeralSaude
+export default MelhoriaGeralSaude;
