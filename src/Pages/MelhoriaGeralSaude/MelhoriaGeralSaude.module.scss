@@ -35,7 +35,7 @@
       grid-area: main;
       display: flex;
       flex-direction: column;
-      gap: 13rem;
+      gap: 10rem;
       font-family: Comfortaa;
       margin: 6rem 0 0 0;
       .odsContainer {
@@ -81,23 +81,126 @@
         }
       }
     }
-    .carrossel{
+    .carrossel {
       display: flex;
       width: 100%;
-      padding-bottom: 2rem;
       justify-content: center;
       align-items: center;
       flex-direction: row;
 
-      .botao1{
+      .botao1 {
         width: 50px;
         height: 50px;
         border-radius: 50px;
         background: #e9720f;
         color: white;
-        font-family: 'Comfortaa';
+        font-family: "Comfortaa";
         border: 1px solid #e9720f;
         margin-left: 1rem;
+      }
+    }
+    .imagensTextoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      h1 {
+        color: #000;
+        font-family: Comfortaa;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 5rem;
+        border-bottom: 2px solid #000;
+      }
+      .imagensTextoGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 10rem;
+        row-gap: 5rem;
+        align-self: center;
+        color: #fff;
+        font-size: 1.3rem;
+        .imagensTexto1 {
+          color: inherit;
+          cursor: pointer;
+          background-image: url("../../assets/imgMelhoria/i1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto2 {
+          background-image: url("../../assets/imgMelhoria/i2.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto3 {
+          background-image: url("../../assets/imgMelhoria/i3.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto4 {
+          background-image: url("../../assets/imgMelhoria/i4.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto5 {
+          background-image: url("../../assets/imgMelhoria/i5.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto6 {
+          background-image: url("../../assets/imgMelhoria/i6.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
       }
     }
 
