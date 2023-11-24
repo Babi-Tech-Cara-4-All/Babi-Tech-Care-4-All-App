@@ -79,12 +79,21 @@ const HomePage = () => {
                 paciente. Junte-se a nós nesta jornada rumo a uma revoluçã o na
                 maneira como cuidamos de nós mesmos e daqueles que amamos.
               </p>
-              <Botao cor="azul">Saiba Mais</Botao>
+              <Botao cor="azul">Vídeo Pitch</Botao>
             </div>
             <div className={styles.imagensBabi}>
-              <img className={styles.babi2} src={babi2} alt="" />
-              <img className={styles.babi1} src={babi1} alt="" />
-            </div>
+  <img className={styles.babi2} src={babi2} alt="" />
+  <iframe
+    className={styles.babi1}
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/-MCtv16U--Q"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
           </section>
           <section className={styles.metasSection}>
             <p className={styles.textBlue}>METAS</p>

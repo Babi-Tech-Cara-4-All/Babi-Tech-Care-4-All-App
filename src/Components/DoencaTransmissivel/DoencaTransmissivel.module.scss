@@ -27,12 +27,12 @@
   }
   .number {
     color: #044b81;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
   }
   .text {
     color: #e9720f;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 }
@@ -41,12 +41,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  width: 27rem;
+  width: 20rem;
   text-align: center;
   border-radius: 2rem;
   font-family: Comfortaa;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: #e4eafa;
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
   box-sizing: content-box;
@@ -65,7 +65,7 @@
   ul {
     padding: 1rem;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: start;
     padding-left: 1rem;
     list-style-type: disc;

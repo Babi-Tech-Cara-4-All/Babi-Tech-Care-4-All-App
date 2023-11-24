@@ -20,7 +20,7 @@
       text-align: center;
       padding: 4rem;
       grid-area: info;
-      font-size: 2.5rem;
+      font-size: 2rem;
       background: rgba(4, 75, 129, 0.34);
     }
   }
@@ -184,37 +184,46 @@
 .informationSection {
   font-family: Comfortaa;
   background-color: #f2cc75;
+
   .gridInformation {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     gap: 0px 0px;
     grid-template-areas: ". main .";
+
     .bodyInformation {
       grid-area: main;
       display: flex;
       flex-direction: row;
       font-family: Comfortaa;
-      padding: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       gap: 5rem;
+      max-width: 100%;
+
       .informacoes {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         a {
           text-decoration: none;
           color: inherit;
         }
+
         ul {
           list-style-type: disc;
           font-size: 1.3rem;
           font-weight: 500;
         }
       }
+
       .maps {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 5rem;
+        max-width: 500px; 
       }
     }
   }
@@ -239,6 +248,7 @@
         flex-direction: column;
         align-items: center;
         gap: 4rem;
+        max-width: 100%;
         h2 {
           color: #044b81;
           font-size: 3rem;
@@ -248,9 +258,10 @@
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(2, auto);
-          column-gap: 10rem;
-          row-gap: 5rem;
+          column-gap: 3%;
+          row-gap: 4%;
           align-self: center;
+          width: 100%;
         }
       }
       .solitarioInformation {
@@ -260,6 +271,7 @@
         color: white;
         gap: 3rem;
         box-sizing: border-box;
+        width: 100%;
         div {
           box-sizing: content-box;
           display: flex;
