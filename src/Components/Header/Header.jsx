@@ -68,7 +68,7 @@ const Header = () => {
                   </li>
                   <li
                     onClick={() => {
-                      navigateTo("/Tratamento-Doencas-Nao-Transmissiveis");
+                      navigateTo("/Prevencao-Doenca-Transmissiveis");
                       handleDropdownToggle();
                     }}
                   >
@@ -76,7 +76,7 @@ const Header = () => {
                   </li>
                   <li
                     onClick={() => {
-                      navigateTo("/Prevencao-Doenca-Transmissiveis");
+                      navigateTo("/Tratamento-Doencas-Nao-Transmissiveis");
                       handleDropdownToggle();
                     }}
                   >
