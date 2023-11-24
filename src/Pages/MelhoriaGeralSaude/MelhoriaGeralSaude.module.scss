@@ -82,9 +82,23 @@
       }
     }
     .carrossel{
-      display: block;
+      display: flex;
       width: 100%;
       padding-bottom: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
+      .botao1{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: #e9720f;
+        color: white;
+        font-family: 'Comfortaa';
+        border: 1px solid #e9720f;
+        margin-left: 1rem;
+      }
     }
 
     .mulherFalando {

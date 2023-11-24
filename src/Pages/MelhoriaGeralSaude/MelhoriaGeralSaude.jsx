@@ -50,6 +50,28 @@ const MelhoriaGeralSaude = () => {
     setTextoVisivel(texto);
   };
 
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [c1, c2, c3, c4, c5];
+  const imageLinks = [
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sus/carta-dos-direitos-dos-usuarios-do-sus",
+    "https://news.un.org/pt/story/2023/07/1817182",
+    "https://grupoft.com.br/seguranca-ao-dirigir/",
+    "https://viverbem.unimedbh.com.br/maternidade/planejamento-familiar/planejamento-familiar/",
+    "https://vidasaudavel.einstein.br/dependencia-quimica/",
+  ]; 
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  
+
+
   return (
     <div className={styles.nTransmissivelContainer}>
       <div className={styles.bannerNTransmissivel}>
@@ -83,12 +105,14 @@ const MelhoriaGeralSaude = () => {
             <img src={ODS3} alt="" />
           </section>
           <section className={styles.carrossel}>
-            <img src={c1} alt="" />
-            <img src={c2} alt="" />
-            <img src={c3} alt="" />
-            <img src={c4} alt="" />
-            <img src={c5} alt="" />
-          </section>
+
+
+          <a href={imageLinks[currentImage]} target="_blank" rel="noopener noreferrer">
+          <img src={images[currentImage]} alt="" />
+          </a>
+
+        <button className={styles.botao1} onClick={nextImage}> next </button>
+      </section>
         </div>
       </div>
       {/* <div className={styles.gridArea}>
