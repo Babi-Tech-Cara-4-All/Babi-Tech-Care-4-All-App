@@ -5,6 +5,8 @@ import MortalidadeInfatil from "./Pages/MortalidadeInfantil/MortalidadeInfatil";
 import Header from "./Components/Header/Header";
 import DoencaTransmissiveis from "./Pages/DoençasTransmissiveis/DoencaTransmissiveis";
 import TratamentoDoencasNaoTransmissiveis from "./Pages/TratamentoDoencasNaoTransmissiveis/TratamentoDoencasNaoTransmissiveis";
+import Footer from "./Components/Footer/Footer";
+
 
 function Router() {
   return (
@@ -26,6 +28,7 @@ function Router() {
         />
         <Route path="/Mortalidade-Infatil" element={<MortalidadeInfatil />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

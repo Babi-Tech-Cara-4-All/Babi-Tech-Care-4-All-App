@@ -10,7 +10,7 @@ const Time = () => {
   return (
     <section className={styles.gridAreaTime}>
       <div className={styles.bodyPageTime}>
-        <p className={styles.textBlueTime}>TIME</p>
+        <p id="time" className={styles.textBlueTime}>TIME</p>
         <h2 className={styles.sectionTitleTime}>
           Devs envolvidos no futuro da saúde
         </h2>

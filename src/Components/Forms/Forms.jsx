@@ -44,7 +44,7 @@ const Forms = () => {
 
   return (
     <section className={styles.formsSection}>
-      <div className={styles.gridAreaForms}>
+      <div id="forms" className={styles.gridAreaForms}>
         <form className={styles.bodyPageForms}>
           <div className={styles.formsHeader}>
             <img src={babi} alt="Babi" />

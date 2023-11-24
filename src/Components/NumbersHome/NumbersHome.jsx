@@ -6,7 +6,7 @@ const NumbersHome = () => {
     <section className={styles.numbersSection}>
       <div className={styles.gridAreaNumbers}>
         <div className={styles.bodyPageNumbers}>
-          <h2>
+          <h2 id="dados">
             Veja números sobre como a tecnologia é super aliada na modernização
             dos espaços de saúde
           </h2>
