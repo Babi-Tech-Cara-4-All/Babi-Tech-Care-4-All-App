@@ -27,6 +27,7 @@
     height: 110px;
 }
 
+
 .ContainerOds{
     margin-left: 10%;   
 }
@@ -177,6 +178,10 @@
     line-height: normal;
 }
 
+.txtods p{
+    padding: 5%;
+}
+
 
 .c1{
     margin-top: 10%;
@@ -200,6 +205,7 @@
     width: 192px;
     height: 1px; 
     background: #000;
+    margin-bottom: 3%;
 }
 
 .Containerpodcast1{
@@ -256,7 +262,7 @@
     fill: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     border-radius: 100px;
-    margin-top: -420px;
+    margin-top: -399px;
 }
 
 .circulo2{
@@ -283,6 +289,10 @@
     line-height: normal;
     align-items: center;
     justify-content: center;
+}
+
+.quadroinfo1,.quadroinfo2 p{
+    width: 650px;
 }
 
 .quadroinfo2{
