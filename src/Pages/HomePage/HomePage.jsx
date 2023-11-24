@@ -120,7 +120,7 @@ const HomePage = () => {
                 transmitidas pela água e
                 outras doenças
                 transmissíveis."
-                rota="/Doenca-Transmissiveis"
+                rota="/Prevencao-Doenca-Transmissiveis"
                 direction="column"
               />
               <Metas
@@ -133,7 +133,7 @@ const HomePage = () => {
                 prematura por
                 doenças não
                 transmissíveis."
-                rota="/Prevencao-Doenca-Transmissiveis"
+                rota="/Tratamento-Doencas-Nao-Transmissiveis"
                 direction="column"
               />
               <Metas
