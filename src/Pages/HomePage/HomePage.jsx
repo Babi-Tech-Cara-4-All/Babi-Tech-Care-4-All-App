@@ -61,7 +61,7 @@ const HomePage = () => {
           </section>
           <section className={styles.videoPitchSection}>
             <div className={styles.text}>
-              <p className={styles.textBlue}>VÍDEO PITCH</p>
+              <p id="videoPitch" className={styles.textBlue}>VÍDEO PITCH</p>
               <h2 className={styles.sectionTitle}>
                 BabiMed: Sempre ao seu lado e salvando vidas.
               </h2>
@@ -157,7 +157,7 @@ const HomePage = () => {
       </div>
       <NumbersHome />
       <Time />
-      <Forms/>
+      <Forms />
     </div>
   );
 };
