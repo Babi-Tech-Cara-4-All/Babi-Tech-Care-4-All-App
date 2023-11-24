@@ -2,11 +2,13 @@ import styles from "./Header.module.scss";
 import babiMed from "../../assets/BabiMed.png";
 import { useNavigate } from "react-router-dom";
 import Botao from "../Botao/Botao";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const navigate = useNavigate();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
 
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
@@ -17,8 +19,28 @@ const Header = () => {
     navigate(`${route}`);
   }
 
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    const isScrollingUp = prevScrollPos > currentScrollPos;
+
+    setPrevScrollPos(currentScrollPos);
+
+    if (isScrollingUp || currentScrollPos === 0) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <header className={styles.headerContainer}>
+    <header className={`${styles.headerContainer} ${visible ? styles.visible : styles.hidden}`}>
       <div className={styles.logoContainer} onClick={() => navigateTo("/")}>
         <img className={styles.logo} src={babiMed} alt="Logo" />
         <h1 className={styles.title}>BABIMED</h1>
@@ -45,7 +67,7 @@ const Header = () => {
                   <li
                     onClick={() => {
                       navigateTo("/Tratamento-Doencas-Nao-Transmissiveis");
-                      handleDropdownToggle()
+                      handleDropdownToggle();
                     }}
                   >
                     Combate a doenças transmissíveis
@@ -53,7 +75,7 @@ const Header = () => {
                   <li
                     onClick={() => {
                       navigateTo("/Prevencao-Doenca-Transmissiveis");
-                      handleDropdownToggle()
+                      handleDropdownToggle();
                     }}
                   >
                     Prevenção e tratamento de doenças não transmissíveis
