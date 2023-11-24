@@ -21,7 +21,7 @@
       text-align: center;
       padding: 4rem;
       grid-area: info;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       background: rgba(4, 75, 129, 0.34);
       text-wrap: wrap;
     }
@@ -112,7 +112,7 @@
   background-color: #e4eafa;
   .gridNTransmissivel {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 15fr 1fr;
     gap: 0px 0px;
     grid-template-areas: ". main .";
     .bodyNTransmissivel {
@@ -140,12 +140,12 @@
           align-items: center;
           justify-content: center;
           gap: 3rem;
-          font-size: 2rem;
+          font-size: 1.2rem;
           width: 100%;
         }
         .informacoesDestaque {
           background-color: #e9720f;
-          font-size: 1.6rem;
+          font-size: 1rem;
           color: #fff;
           text-wrap: wrap;
           padding: 1rem 3rem;
@@ -189,8 +189,8 @@
         .doencasFlex {
           display: flex;
           flex-direction: row;
-          gap: 3rem;
-          flex-wrap: wrap;
+          gap: 2rem;
+          
         }
       }
     }
@@ -212,34 +212,34 @@
       align-items: center;
       justify-content: center;
       font-family: Comfortaa;
-      padding: 2rem;
+      padding: 1.5rem;
       gap: 3rem;
       .headerBemEstar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 7rem;
+        gap: 3.5rem;
         .headerH1 {
           color: #fff;
-          font-size: 4rem;
+          font-size: 1.7rem;
           background-color: #e9720f;
-          border-radius: 2rem;
-          padding: 1rem 2rem;
+          border-radius: 3rem;
+          padding: 1.5rem 3rem;
           text-wrap: nowrap;
           position: relative;
-          top: -4rem;
+          top: -5rem;
           box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.24);
         }
         .headerP {
-          font-size: 1.7rem;
+          font-size: 1.2rem;
         }
       }
       .bodyBemEstar {
         display: flex;
         flex-direction: row;
         box-sizing: content-box;
-        flex-wrap: wrap;
+  
         p {
           color: #000;
         }
@@ -276,16 +276,16 @@
         gap: 2rem;
         h1 {
           color: #fff;
-          font-size: 3rem;
+          font-size: 2rem;
           background-color: #e9720f;
-          border-radius: 2rem;
-          padding: 4rem 4rem;
+          border-radius: 3rem;
+          padding: 2rem 1.5rem;
           text-align: center;
           box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.24);
         }
         ul {
           color: #000;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           font-weight: 400;
           margin-left: 5rem;
           li {

@@ -20,6 +20,7 @@ import medicoTecnologico from "../../assets/imgDoencasTransmissiveis/medicoTecno
 
 const DoencaTransmissiveis = () => {
   return (
+    <container>
     <div className={styles.mortalidadeContainer}>
       <div className={styles.bannerMortalidade}>
         <p className={styles.infoContainer}>
@@ -238,6 +239,7 @@ const DoencaTransmissiveis = () => {
         </div>
       </section>
     </div>
+    </container>
   );
 };
 
