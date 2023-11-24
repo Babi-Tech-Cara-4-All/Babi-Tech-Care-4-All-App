@@ -27,8 +27,10 @@ const Header = () => {
 
     if (isScrollingUp || currentScrollPos === 0) {
       setVisible(true);
+      setDropdownOpen(false)
     } else {
       setVisible(false);
+      setDropdownOpen(false)
     }
   };
 
