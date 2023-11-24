@@ -37,16 +37,23 @@
     align-items: center;
     gap: 2rem;
     margin-right: 1.5rem;
+    cursor: pointer;
+    
+    
 
+    
     ul {
       display: flex;
       flex-direction: row;
       align-items: center;
       color: #fff;
       font-family: Montserrat;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 500;
       gap: 2rem;
+      cursor: pointer;
+      
+      
       .dropdown{
         button{
           color: #fff;
@@ -55,6 +62,16 @@
           font-weight: 500;
           background: none;
           border: none;
+          cursor: pointer;
+          &:hover{
+            transition: 0.5s;
+            background-color: #647cb4;
+            padding-inline: 5px;
+          }
+          
+        }
+        &:hover .dropdownMenu {
+          max-height: 500px; /* Ajuste conforme necessário */
         }
         .dropdownMenu{
           margin-top: 2rem;
@@ -63,8 +80,9 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background: #fff;
+          background: #fff !important;
           padding: 1rem;
+          
           li{
             width: 100%;
             border-bottom: 1px solid #999;
@@ -75,6 +93,13 @@
             font-family: Comfortaa;
             font-size: 1.2rem;
             font-weight: 700;
+            cursor: pointer;
+
+            &:hover{
+              background-color: lightgrey !important;
+              height: 100%;
+              transition: transform 0.3s ease-in-out;
+            }
           }
         }
       }
@@ -90,4 +115,11 @@
 
 .hidden {
   top: -15rem;
+}
+
+.homeOption:hover{
+  transition: 0.5s;
+  background-color: #647cb4;
+  padding-inline: 5px;
+  border-radius: 30px;
 }

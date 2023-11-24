@@ -49,10 +49,10 @@ const Header = () => {
       </div>
       <nav className={styles.optionsContainer}>
         <ul>
-          <li onClick={() => navigateTo("/")}>Home</li>
+          <li className={styles.homeOption} onClick={() => navigateTo("/")}>Home</li>
           <li>
             <div className={styles.dropdown}>
-              <button onClick={handleDropdownToggle}>
+              <button className={styles.homeOption}  onClick={handleDropdownToggle}>
                 Metas
                 <i className={`arrow ${dropdownOpen ? "up" : "down"}`}></i>
               </button>
@@ -86,7 +86,7 @@ const Header = () => {
               )}
             </div>
           </li>
-          <li onClick={() => navigateTo("/Melhoria-Geral-Da-Saude")}>
+          <li className={styles.homeOption} onClick={() => navigateTo("/Melhoria-Geral-Da-Saude")}>
             Melhoria
           </li>
           <Botao><li>Fale conosco</li></Botao>
