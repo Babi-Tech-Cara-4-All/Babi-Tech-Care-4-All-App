@@ -1,310 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+.nTransmissivelContainer {
+  width: 100%;
 
-.bannerContainer{
-    max-width: 100%;
-}
-
-.bannerContainer img{
-    width: 100%;
-    display: block;
-}
-
-
-.tituloBanner{
-    font-family: 'Comfortaa';
-    display: flex;
-    position: absolute;
+  .bannerNTransmissivel {
+    margin-top: 4rem;
+    height: 80vh;
+    background-image: url("../../assets/imgMelhoria/Banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    background: rgba(224, 54, 0, 0.52);
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 110px;
-}
-
-
-.ContainerOds{
-    margin-left: 10%;   
-}
-
-.botoesOds{
-    display: flex;
-}
-
-// tava colocando os botoes juntos mas tava dando erro entao fiz assim pra deixar pronto
-.btn35{
-    margin-top: 5%;
-    width: 164px;
-    height: 86px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #9C9C9C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
     font-family: Comfortaa;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn35:hover{
-    background: #E9720F;
-}
-.btn36{
-    margin-left: 12px;
-    margin-top: 5%;
-    width: 164px;
-    height: 86px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #9C9C9C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Comfortaa;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn36:hover{
-    background: #E9720F;
-}
-.btn37{
-    margin-left: 12px;
-    margin-top: 5%;
-    width: 164px;
-    height: 86px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #9C9C9C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Comfortaa;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn37:hover{
-    background: #E9720F;
-}
-.btn38{
-    margin-left: 12px;
-    margin-top: 5%;
-    width: 164px;
-    height: 86px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #9C9C9C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Comfortaa;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn38:hover{
-    background: #E9720F;
-}
-.btn39{
-    margin-left: 12px;
-    margin-top: 5%;
-    width: 164px;
-    height: 86px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #9C9C9C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Comfortaa;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn39:hover{
-    background: #E9720F;
-}
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: 9fr 3fr 1fr;
+    grid-template-areas:
+      "."
+      "info"
+      ".";
+    .nTransmissivelContainer {
+      box-sizing: border-box;
+      text-align: center;
+      padding: 4rem;
+      grid-area: info;
+      font-size: 2.5rem;
+      background: rgba(224, 54, 0, 0.52);
+      text-wrap: wrap;
+    }
+  }
+  .gridArea {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". main .";
+    .bodyPage {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      gap: 10rem;
+      font-family: Comfortaa;
+      margin: 6rem 0 0 0;
+      .odsContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 12rem;
+        color: #fff;
+        .odsInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          width: 100%;
+          .odsList {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            .tituloAtivo {
+              padding: 1rem 1.7rem;
+              font-size: 1.5rem;
+              font-weight: 700;
+              border-radius: 1rem;
+              background: #e9720f;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+            .tituloInativo {
+              padding: 1rem 1.7rem;
+              font-size: 1.5rem;
+              font-weight: 700;
+              border-radius: 1rem;
+              background: #9c9c9c;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+          }
+          .odsText {
+            border-radius: 1.5rem;
+            background: #647cb4;
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .carrossel {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
 
-.ods3{
-    position: absolute;
-    margin-left: 70%;
-    margin-top: -86px;
-}
-
-.txtods{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3%;
-    margin-left: 13%;
-    width: 791px;
-    height: 194px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #647CB4;
-    color: #FFF;
-    text-align: center;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.txtods p{
-    padding: 5%;
-}
-
-
-.c1{
-    margin-top: 10%;
-    margin-left: 22%;
-}
-
-.txtpodcast{
-    margin-top: 5%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    color: #000;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.hr{
-    width: 192px;
-    height: 1px; 
-    background: #000;
-    margin-bottom: 3%;
-}
-
-.Containerpodcast1{
-    display: flex;
-    margin-left: 13%;
-    justify-content: space-between;
-    margin-right: 13%;
-}
-
-.Containerpodcast2{
-    display: flex;
-    margin-left: 13%;
-    margin-right: 13%;
-    margin-top: 35px;
-    justify-content: space-between;
-
-}
-
-.txtpPodcast{
-    width: 305px;
-    height: 74px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: -25%;
-    margin-left: 5%;
-}
-
-.info2{
-    display: flex;
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.quadrocinza{
-    margin-top: 7%;
-    width: 818px;
-    height: 360px;
-    flex-shrink: 0;
-    background: #D9D9D9;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.circulo1{
-    position: absolute;
-    margin-left: 750px;
-    width: 38px;
-    height: 38px;
-    flex-shrink: 0;
-    fill: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    border-radius: 100px;
-    margin-top: -399px;
-}
-
-.circulo2{
-    position: absolute;
-    margin-left: 750px;
-    width: 38px;
-    height: 38px;
-    flex-shrink: 0;
-    fill: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    border-radius: 100px;
-    margin-top: -150px;
-}
-
-.quadroinfo1{
-    margin-top: 60px;
-    margin-left: 90px;
-    position: absolute;
-    color: #000;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    align-items: center;
-    justify-content: center;
-}
-
-.quadroinfo1,.quadroinfo2 p{
-    width: 650px;
-}
-
-.quadroinfo2{
-    margin-top: 230px;
-    margin-left: 90px;
-    position: absolute;
-    color: #000;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    align-items: center;
-    justify-content: center;
+      .botao1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: #e9720f;
+        color: white;
+        font-family: "Comfortaa";
+        border: 1px solid #e9720f;
+        margin-left: 1rem;
+      }
+    }
+    .imagensTextoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      h1 {
+        color: #000;
+        font-family: Comfortaa;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 5rem;
+        border-bottom: 2px solid #000;
+      }
+      .imagensTextoGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 10rem;
+        row-gap: 5rem;
+        align-self: center;
+        color: #fff;
+        font-size: 1.3rem;
+        .imagensTexto1 {
+          color: inherit;
+          cursor: pointer;
+          background-image: url("../../assets/imgMelhoria/i1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto2 {
+          background-image: url("../../assets/imgMelhoria/i2.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto3 {
+          background-image: url("../../assets/imgMelhoria/i3.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto4 {
+          background-image: url("../../assets/imgMelhoria/i4.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto5 {
+          background-image: url("../../assets/imgMelhoria/i5.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+        .imagensTexto6 {
+          background-image: url("../../assets/imgMelhoria/i6.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 24rem;
+          color: inherit;
+          cursor: pointer;
+          text-decoration: none;
+          display: flex; 
+          flex-direction: column;
+          justify-content: end;
+          padding: 1rem 0.5rem;
+        }
+      }
+    }
+    .kigsFund{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5rem;
+      p{
+        background-image: url("../../assets/imgMelhoria/paper.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 8rem 9rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
