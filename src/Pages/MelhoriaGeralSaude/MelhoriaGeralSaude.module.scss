@@ -21,14 +21,14 @@
       text-align: center;
       padding: 4rem;
       grid-area: info;
-      font-size: 2.5rem;
+      font-size: 2rem;
       background: rgba(224, 54, 0, 0.52);
       text-wrap: wrap;
     }
   }
   .gridArea {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
     gap: 0px 0px;
     grid-template-areas: ". main .";
     .bodyPage {
@@ -41,7 +41,7 @@
       .odsContainer {
         display: flex;
         flex-direction: row;
-        gap: 12rem;
+        gap: 8rem;
         color: #fff;
         .odsInfo {
           display: flex;
@@ -51,13 +51,14 @@
           .odsList {
             display: flex;
             flex-direction: row;
+            column-gap: 1rem;
             justify-content: space-between;
             width: 100%;
             .tituloAtivo {
               padding: 1rem 1.7rem;
               font-size: 1.5rem;
               font-weight: 700;
-              border-radius: 1rem;
+              border-radius: 3rem;
               background: #e9720f;
               box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             }
@@ -65,7 +66,7 @@
               padding: 1rem 1.7rem;
               font-size: 1.5rem;
               font-weight: 700;
-              border-radius: 1rem;
+              border-radius: 3rem;
               background: #9c9c9c;
               box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             }
@@ -74,7 +75,7 @@
             border-radius: 1.5rem;
             background: #647cb4;
             padding: 2rem;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             width: 100%;
           }
@@ -116,7 +117,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
-        column-gap: 10rem;
+        column-gap: 3rem;
         row-gap: 5rem;
         align-self: center;
         color: #fff;
@@ -206,13 +207,19 @@
     .kigsFund{
       display: flex;
       flex-direction: row;
+      height: 18%;
       margin-bottom: 5rem;
+      img{
+        width: 50%;
+        height: 58%;
+    
+      }
       p{
         background-image: url("../../assets/imgMelhoria/paper.png");
         background-repeat: no-repeat;
-        background-size: cover;
-        padding: 8rem 9rem;
-        font-size: 1.5rem;
+        background-size: contain;
+        padding: 5rem 9rem;
+        font-size: 1.2rem;
       }
     }
   }
