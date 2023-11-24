@@ -1,13 +1,34 @@
 .memberCard {
   border-radius: 0.6rem;
   background: #232c32;
+  overflow: hidden; // Garante que a sombra projetada para fora seja visível
+  transition: box-shadow 0.3s ease-out; // Adiciona uma transição para suavizar a mudança na sombra
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); // Adiciona uma sombra ao redor do card no hover
+  }
+
+  .memberImg {
+    overflow: hidden; // Garante que a imagem não ultrapasse os limites do contêiner
+  }
+
+  .imgHover {
+    transition: transform 0.3s ease-out;
+    // Adiciona a transição para suavizar as mudanças no tamanho durante o hover
+
+    &:hover {
+      transform: scale(1.1); // Aumenta o tamanho da imagem em 10% no hover
+    }
+  }
+
   .memberName {
     margin: 1rem;
     color: #fff;
     font-family: Comfortaa;
     font-size: 1.5rem;
     font-weight: 700;
-    a{
+
+    a {
       text-decoration: none;
       color: inherit;
     }

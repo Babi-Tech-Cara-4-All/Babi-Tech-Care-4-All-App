@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 10fr 1fr;
   gap: 0px 0px;
   grid-template-areas: ". main .";
+  max-width: 100%;
   .bodyPageTime {
     grid-area: main;
     display: flex;
@@ -24,8 +25,8 @@
     .timeMembers{
       display: flex;
       flex-direction: row;
-      gap: 5rem;
-      margin: 3rem 0;
+      gap: 2%;
+      margin: 3% 0;
     }
   }
 }
