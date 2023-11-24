@@ -17,6 +17,7 @@ import muqueDaMedica from "../../assets/imgDoencasTransmissiveis/muqueDaMedica.p
 import helpHumanidade from "../../assets/imgDoencasTransmissiveis/helpHumanidade.png";
 import medicoTecnologico from "../../assets/imgDoencasTransmissiveis/medicoTecnologico.png";
 
+
 const DoencaTransmissiveis = () => {
   return (
     <div className={styles.mortalidadeContainer}>
@@ -44,41 +45,6 @@ const DoencaTransmissiveis = () => {
                   transmissíveis.
                 </h3>
               </div>
-            </div>
-          </section>
-          <section className={styles.gridDoencas}>
-            <h2>Principais doenças transmissiveis e mortalidades</h2>
-            <div className={styles.gridDoencasContainer}>
-              <DoencaTransmissivel
-                cor="azul"
-                nome="HIV"
-                casos="37.7 M"
-                mortes="680 K"
-              />
-              <DoencaTransmissivel
-                cor="laranja"
-                nome="Tuberculose"
-                casos="5.8 M"
-                mortes="1.3 M"
-              />
-              <DoencaTransmissivel
-                cor="azul"
-                nome="Malaria"
-                casos="241 M"
-                mortes="627 K"
-              />
-              <DoencaTransmissivel
-                cor="laranja"
-                nome="Hepatite B"
-                casos="296 M"
-                mortes="820 K"
-              />
-              <DoencaTransmissivel
-                cor="azul"
-                nome="DTNs"
-                casos="1.7 B"
-                mortes="750 K"
-              />
             </div>
           </section>
           <section className={styles.gridCausadores}>

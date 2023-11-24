@@ -15,6 +15,7 @@ import prevencaoDoenca from "../../assets/imgHomePage/prevencaoDoenca.png";
 import melhoriaSaude from "../../assets/imgHomePage/melhoriaSaude.png";
 import NumbersHome from "../../Components/NumbersHome/NumbersHome";
 import Time from "../../Components/Time/Time";
+import Forms from "../../Components/Forms/Forms";
 
 const HomePage = () => {
   return (
@@ -41,24 +42,19 @@ const HomePage = () => {
           <section className={styles.caracteristicas}>
             <HomeCaracteristicas
               img={prevencao}
-              text="Soluções baseadas em dados, wearables e 
-apps capacitam o monitoramento eficaz da saúde, promovendo o autocuidado."
+              text="Soluções baseadas em dados, wearables e apps capacitam o monitoramento eficaz da saúde, promovendo o autocuidado."
             >
               Prevenção
             </HomeCaracteristicas>
             <HomeCaracteristicas
               img={automacao}
-              text="A medicina personalizada permite tratamentos sob medida para pacientes com base em
-sua composição
-genética única."
+              text="Cirurgias robóticas de precisão e sistemas de entrega de medicamentos autônomos para pacientes estão se tornando realidade."
             >
               Automação
             </HomeCaracteristicas>
             <HomeCaracteristicas
               img={precisao}
-              text="A medicina personalizada permite tratamentos sob medida para pacientes com base em
-sua composição
-genética única."
+              text="A medicina personalizada permite tratamentos sob medida para pacientes com base em sua composição genética única."
             >
               Precisão
             </HomeCaracteristicas>
@@ -161,6 +157,7 @@ genética única."
       </div>
       <NumbersHome />
       <Time />
+      <Forms/>
     </div>
   );
 };
